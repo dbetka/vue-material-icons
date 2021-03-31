@@ -5,6 +5,8 @@
  */
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 function _slicedToArray(arr, i) {
   return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
 }
@@ -520,7 +522,7 @@ var script = {
   props: {
     type: {
       type: String,
-      required: true
+      "default": 'baseline'
     },
     name: {
       type: String,
@@ -2472,10 +2474,6 @@ function styleInject(css, ref) {
 var css_248z = ".a-icon {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: \"liga\";\n}";
 styleInject(css_248z);
 
-var components = {
-  AIcon: __vue_component__
-};
-
 function createCSSLink(CSSLink, key) {
   var cssId = 'dbetka-material-icons'; // you could encode the css path itself to generate id..
 
@@ -2489,7 +2487,7 @@ function createCSSLink(CSSLink, key) {
   }
 }
 
-function createAllCSSLinks() {
+function addIconsFonts() {
   var list = ['https://fonts.googleapis.com/css2?family=Material+Icons', 'https://fonts.googleapis.com/css2?family=Material+Icons+Outlined', 'https://fonts.googleapis.com/css2?family=Material+Icons+Round', 'https://fonts.googleapis.com/css2?family=Material+Icons+Sharp', 'https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone'];
 
   var _iterator = _createForOfIteratorHelper(list.entries()),
@@ -2510,23 +2508,18 @@ function createAllCSSLinks() {
   }
 }
 
-console.log('test!!!');
-module.exports = Object.assign({
-  ICONS: {
-    get: function get() {
-      return ICONS;
-    }
-  }
-}, components, {
+var ICONS_GETTER = function ICONS_GETTER() {
+  return ICONS;
+};
+var components = {
+  AIcon: __vue_component__
+};
+var index = {
   install: function install(Vue, options) {
-    console.log('test');
-    console.log({
-      Vue: Vue
-    });
-    createAllCSSLinks();
+    addIconsFonts();
     Vue.mixin({
       computed: {
-        ICONS: ICONS
+        ICONS: ICONS_GETTER
       }
     });
 
@@ -2535,5 +2528,11 @@ module.exports = Object.assign({
       Vue.component(component.name, component);
     }
   }
-});
+};
+
+exports.AIcon = __vue_component__;
+exports.ICONS = ICONS;
+exports.ICONS_GETTER = ICONS_GETTER;
+exports.addIconsFonts = addIconsFonts;
+exports.default = index;
 //# sourceMappingURL=index.js.map

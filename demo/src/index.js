@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-import MaterialIcons from '../../src/index.js';
+// import MaterialIcons from 'material-icons';
 
 Vue.config.productionTip = false;
 
-Vue.use(MaterialIcons);
+// Vue.use(MaterialIcons);
 
 new Vue({
   router,

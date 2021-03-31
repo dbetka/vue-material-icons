@@ -2,10 +2,6 @@ import AIcon from './components/icon.vue';
 import { ICONS } from './__jscash__/icons-names-list';
 import './index.sass';
 
-const components = {
-  AIcon,
-};
-
 function createCSSLink (CSSLink, key) {
   const cssId = 'dbetka-material-icons'; // you could encode the css path itself to generate id..
   if (!document.getElementById(cssId)) {
@@ -17,7 +13,7 @@ function createCSSLink (CSSLink, key) {
     head.appendChild(link);
   }
 }
-function createAllCSSLinks () {
+function addIconsFonts () {
   const list = [
     'https://fonts.googleapis.com/css2?family=Material+Icons',
     'https://fonts.googleapis.com/css2?family=Material+Icons+Outlined',
@@ -28,14 +24,24 @@ function createAllCSSLinks () {
   for (const [key, CSSLink] of list.entries()) createCSSLink(CSSLink, key);
 }
 
+export const ICONS_GETTER = () => ICONS;
+
+const components = {
+  AIcon,
+};
+
+export {
+  AIcon,
+  ICONS,
+  addIconsFonts,
+};
+
 export default {
-  ICONS: () => ICONS,
-  ...components,
   install (Vue, options) {
-    createAllCSSLinks();
+    addIconsFonts();
     Vue.mixin({
       computed: {
-        ICONS: () => ICONS,
+        ICONS: ICONS_GETTER,
       },
     });
     for (const componentName in components) {

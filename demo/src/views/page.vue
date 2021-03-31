@@ -8,8 +8,18 @@
 </template>
 
 <script>
+import { AIcon, ICONS_GETTER, addIconsFonts } from 'material-icons';
+
+addIconsFonts();
+
 export default {
   name: 'page',
+  components: {
+    AIcon,
+  },
+  computed: {
+    ICONS: ICONS_GETTER,
+  },
 };
 </script>
 

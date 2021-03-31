@@ -32,7 +32,7 @@ module.exports = {
     alias: {
       'vue': 'vue/dist/vue.esm.js',
       'demo': resolve('demo'),
-      'src': resolve('src'),
+      'material-icons': resolve('src/index.js'),
       'router': resolve('demo/src/router'),
       'utils': resolve('src/utils'),
     },
