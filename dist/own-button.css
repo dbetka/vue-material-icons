@@ -1,0 +1,40 @@
+.f-bold {
+  font-weight: bold; }
+
+.f-display-none {
+  display: none; }
+
+.f-hidden {
+  visibility: hidden; }
+
+.f-visible {
+  visibility: visible; }
+
+.f-disabled {
+  opacity: 0.5; }
+
+.f-list-disc {
+  list-style: disc; }
+
+.f-cursor-pointer {
+  cursor: pointer; }
+
+.f-cursor-default {
+  cursor: default; }
+
+.own-button {
+  min-width: 184px;
+  height: 36px;
+  border: 1px solid gray;
+    border-radius: 20px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: transparent;
+  margin: 14px 0;
+  padding: 0 20px;
+  align-self: center;
+  outline: none; }
+  .own-button:hover {
+    background: green; }

@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "plugin:vue/essential",
+    "standard"
+  ],
+  "rules": {
+    "no-undef": "off",
+    "eqeqeq": "warn",
+    "no-unused-vars": "warn",
+    "no-unused-expressions": "off",
+    "no-useless-call": "warn",
+    "no-useless-escape": "warn",
+    "padded-blocks": "off",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "quote-props": [
+      "error",
+      "consistent"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "vue/html-indent": [
+      "error",
+      2
+    ],
+    "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true }]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "@dbetka/vue-plugin-template",
+  "version": "0.0.1",
+  "description": "Template for vue plugin project.",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "",
+    "build-plugin": "npx bili --bundle-node-modules",
+    "build-full-css": "node scripts/bundle-css-assembly.js -i src/index.sass -o dist",
+    "build-wigets-css": "node scripts/bundle-css-seperately.js -i src/styles/components -o dist -b src/base-file.sass",
+    "build-themes-css": "node scripts/bundle-css-seperately.js -i src/styles/themes -o dist/themes",
+    "build-css": "npm run build-full-css && npm run build-wigets-css && npm run build-themes-css",
+    "build": "npm run build-css && npm run build-plugin"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbetka/vue-plugin-template.git"
+  },
+  "author": "dbetka",
+  "bugs": {
+    "url": "https://github.com/dbetka/vue-plugin-template/issues"
+  },
+  "homepage": "https://github.com/dbetka/vue-plugin-template#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "bili": "^4.9.0",
+    "directory-tree": "^2.2.4",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "glob": "^7.1.6",
+    "node-sass": "^4.14.1",
+    "rollup-plugin-vue": "^5.1.6",
+    "vue-material-design-icons": "^4.6.0",
+    "vue-template-compiler": "^2.6.11",
+    "yargs": "^15.4.1"
+  }
+}
