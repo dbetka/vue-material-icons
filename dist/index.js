@@ -2469,7 +2469,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".f-bold {\n  font-weight: bold; }\n\n.f-display-none {\n  display: none; }\n\n.f-hidden {\n  visibility: hidden; }\n\n.f-visible {\n  visibility: visible; }\n\n.f-disabled {\n  opacity: 0.5; }\n\n.f-list-disc {\n  list-style: disc; }\n\n.f-cursor-pointer {\n  cursor: pointer; }\n\n.f-cursor-default {\n  cursor: default; }\n\n.own-button {\n  min-width: 184px;\n  height: 36px;\n  border: 1px solid gray;\n    border-radius: 20px;\n  font-weight: 500;\n  line-height: 16px;\n  letter-spacing: 0.75px;\n  text-transform: uppercase;\n  color: transparent;\n  margin: 14px 0;\n  padding: 0 20px;\n  align-self: center;\n  outline: none; }\n  .own-button:hover {\n    background: green; }\n";
+var css_248z = ".a-icon {\n  font-family: 'Material Icons';\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: 'liga'; }\n";
 styleInject(css_248z);
 
 var components = {
