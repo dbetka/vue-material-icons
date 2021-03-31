@@ -1,25 +1,9 @@
 # material-icons
-Template for vue plugin project with SASS and global imports for SASS.
+Vue2 material design icons with easy access to icons names.
 
-## Installation
-```
-npm i
-```
+## Setup
 
-## Building
-```
-npm run build                   Build js and css bundles from all js, vue and sass files.
-
-npm run build-plugin            Build js bundle from js and vue files.
-
-npm run build-css               Build css bundles from all sass files (run all scripts includes css in name).
-
-npm run build-full-css          Build one css bundle from all sass files.
-npm run build-wigets-css        Build css bundles for each sass component file which will has included base-file.sass on the beginning.
-npm run build-themes-css        Build css bundles for each sass theme file.
-```
-
-## Usage outside of plugin
+#### Put into html 
 
 #### Full Bundle
 ```js
@@ -31,15 +15,57 @@ Vue.use(MaterialIcons);
 ### Individual components
 with default name
 ```js
-import { Icon } from '@dbetka/material-icons';
+import { AIcon } from '@dbetka/material-icons';
 
-Vue.component(Icon.name, Icon); // component name is icon
+Vue.component(AIcon.name, AIcon); // component name is `a-icon`
 ```
 with own name
 ```js
-import { Icon } from '@dbetka/material-icons';
+import { AIcon } from '@dbetka/material-icons';
 
-Vue.component('a-icon', Icon); // component name is a-icon
+Vue.component('my-component', AIcon); // component name is `my-component`
+```
+
+## Usage
+For full bundle setup
+```vue
+<template>
+  <a-icon :name="ICONS.check"/>
+</template>
+
+<script>
+export default {
+  name: 'some-page',
+};
+</script>
+```
+For a setup in single component
+```vue
+<template>
+  <a-icon :name="ICONS.check"/>
+</template>
+
+<script>
+import { AIcon } from '@dbetka/material-icons';
+import { ICONS } from '@dbetka/material-icons';
+
+export default {
+  name: 'some-page',
+  components: {
+    AIcon,
+  },
+  computed: {
+    ICONS,
+  },
+};
+</script>
+```
+
+#### List of icons
+```js
+import { ICONS } from '@dbetka/material-icons';
+
+ICONS().check // returns `check`
 ```
 
 ## Project maintenance
