@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const webpackUtils = require('./webpack/utils');
 const webpackRules = require('./webpack/rules').rules;
@@ -34,10 +33,10 @@ module.exports = {
       'vue': 'vue/dist/vue.esm.js',
       'demo': resolve('demo'),
       'src': resolve('src'),
-      'dist': resolve('dist'),
       'router': resolve('demo/src/router'),
       'utils': resolve('src/utils'),
     },
+    modules: [resolve('node_modules')],
     extensions: ['.vue', '.sass', '.js', '.css'],
   },
   plugins: [

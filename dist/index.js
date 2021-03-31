@@ -657,7 +657,7 @@ var __vue_is_functional_template__ = false;
 
 /* style inject shadow dom */
 
-var __vue_component__ = normalizeComponent({
+var __vue_component__ = /*#__PURE__*/normalizeComponent({
   render: __vue_render__,
   staticRenderFns: __vue_staticRenderFns__
 }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, undefined, undefined, undefined);
@@ -2469,7 +2469,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".a-icon {\n  font-family: 'Material Icons';\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: 'liga'; }\n";
+var css_248z = ".a-icon {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: \"liga\";\n}";
 styleInject(css_248z);
 
 var components = {
@@ -2510,14 +2510,19 @@ function createAllCSSLinks() {
   }
 }
 
-var index = Object.assign(Object.assign({
+console.log('test!!!');
+module.exports = Object.assign({
   ICONS: {
     get: function get() {
       return ICONS;
     }
   }
-}, components), {}, {
+}, components, {
   install: function install(Vue, options) {
+    console.log('test');
+    console.log({
+      Vue: Vue
+    });
     createAllCSSLinks();
     Vue.mixin({
       computed: {
@@ -2531,6 +2536,4 @@ var index = Object.assign(Object.assign({
     }
   }
 });
-
-module.exports = index;
 //# sourceMappingURL=index.js.map

@@ -1,6 +1,9 @@
 <template>
   <div class="page">
-    test
+    <div>test</div>
+    <div>
+      <a-icon :name="ICONS.check"/>
+    </div>
   </div>
 </template>
 

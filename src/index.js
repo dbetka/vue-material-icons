@@ -29,17 +29,13 @@ function createAllCSSLinks () {
 }
 
 export default {
-  ICONS: {
-    get () {
-      return ICONS;
-    },
-  },
+  ICONS: () => ICONS,
   ...components,
   install (Vue, options) {
     createAllCSSLinks();
     Vue.mixin({
       computed: {
-        ICONS,
+        ICONS: () => ICONS,
       },
     });
     for (const componentName in components) {

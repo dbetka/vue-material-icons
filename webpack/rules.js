@@ -8,6 +8,7 @@ module.exports = {
       enforce: 'pre',
       include: [
         resolve('src'),
+        resolve('demo'),
       ],
       options: {
         formatter: require('eslint-friendly-formatter'),
