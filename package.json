@@ -1,7 +1,7 @@
 {
   "name": "@dbetka/material-icons",
   "version": "0.1.0",
-  "description": "Material Design Icons",
+  "description": "Vue Material Design Icons",
   "license": "MIT",
   "main": "./dist/index.js",
   "scripts": {
@@ -10,8 +10,7 @@
     "build": "npx bili"
   },
   "files": [
-    "dist",
-    "node_modules"
+    "dist"
   ],
   "repository": {
     "type": "git",
