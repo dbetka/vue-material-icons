@@ -1,5 +1,5 @@
 /*!
- * @dbetka/vue-plugin-template v0.0.1
+ * @dbetka/material-icons v0.1.0
  * (c) dbetka
  * Released under the MIT License.
  */
@@ -130,6 +130,36 @@ var __vue_component__ = normalizeComponent({
   staticRenderFns: __vue_staticRenderFns__
 }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, undefined, undefined, undefined);
 
+function styleInject(css, ref) {
+  if ( ref === void 0 ) ref = {};
+  var insertAt = ref.insertAt;
+
+  if (!css || typeof document === 'undefined') { return; }
+
+  var head = document.head || document.getElementsByTagName('head')[0];
+  var style = document.createElement('style');
+  style.type = 'text/css';
+
+  if (insertAt === 'top') {
+    if (head.firstChild) {
+      head.insertBefore(style, head.firstChild);
+    } else {
+      head.appendChild(style);
+    }
+  } else {
+    head.appendChild(style);
+  }
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var css_248z = ".f-bold {\n  font-weight: bold; }\n\n.f-display-none {\n  display: none; }\n\n.f-hidden {\n  visibility: hidden; }\n\n.f-visible {\n  visibility: visible; }\n\n.f-disabled {\n  opacity: 0.5; }\n\n.f-list-disc {\n  list-style: disc; }\n\n.f-cursor-pointer {\n  cursor: pointer; }\n\n.f-cursor-default {\n  cursor: default; }\n\n.own-button {\n  min-width: 184px;\n  height: 36px;\n  border: 1px solid gray;\n    border-radius: 20px;\n  font-weight: 500;\n  line-height: 16px;\n  letter-spacing: 0.75px;\n  text-transform: uppercase;\n  color: transparent;\n  margin: 14px 0;\n  padding: 0 20px;\n  align-self: center;\n  outline: none; }\n  .own-button:hover {\n    background: green; }\n";
+styleInject(css_248z);
+
 var components = {
   OwnButton: __vue_component__
 };
@@ -143,3 +173,4 @@ var index = Object.assign(Object.assign({}, components), {}, {
 });
 
 module.exports = index;
+//# sourceMappingURL=index.js.map

@@ -23,31 +23,25 @@ npm run build-themes-css        Build css bundles for each sass theme file.
 
 #### Full Bundle
 ```js
-import VueAtomic from 'vue-plugin-template' // vue-plugin-template is path to plugin directory
-import 'vue-plugin-template/dist/themes/light.css'
-import 'vue-plugin-template/dist/index.css'
+import MaterialIcons from '@dbetka/material-icons';
 
-Vue.use(VueAtomic)
+Vue.use(MaterialIcons);
 ```
 
 ### Individual components
 with default name
 ```js
-import { OwnButton } from 'vue-plugin-template' // vue-plugin-template is path to plugin directory
-import 'vue-plugin-template/dist/themes/light.css'
-import 'vue-plugin-template/dist/own-button.css'
+import { Icon } from '@dbetka/material-icons';
 
-Vue.component(OwnButton.name, OwnButton) // component name is own-button
+Vue.component(Icon.name, Icon); // component name is icon
 ```
 with own name
 ```js
-import { OwnButton } from 'vue-plugin-template' // vue-plugin-template is path to plugin directory
-import 'vue-plugin-template/dist/themes/light.css'
-import 'vue-plugin-template/dist/own-button.css'
+import { Icon } from '@dbetka/material-icons';
 
-Vue.component('new-button', OwnButton) // component name is new-button
+Vue.component('a-icon', Icon); // component name is a-icon
 ```
 
-## Project maintenance 
+## Project maintenance
 
 Scripts used in `package.json` has own docs [here](scripts/README.md)

@@ -6,5 +6,7 @@ module.exports = {
   output: {
     dir: 'dist',
     sourceMap: true,
+    extractCSS: false,
   },
+  bundleNodeModules: true,
 };
