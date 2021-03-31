@@ -1,5 +1,13 @@
 <template>
   <div id="app">
+    <div id="nav">
+      <router-link to="/">
+        Individual component
+      </router-link>
+      <router-link to="/full-bundle">
+        Full bundle
+      </router-link>
+    </div>
     <router-view/>
   </div>
 </template>
@@ -27,6 +35,7 @@ body {
   a {
     font-weight: bold;
     color: #2c3e50;
+    margin: 0 8px;
 
     &.router-link-exact-active {
       color: #42b983;

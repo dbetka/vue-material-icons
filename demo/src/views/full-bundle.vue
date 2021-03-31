@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <div>Demo for usage in component without full bundle.</div>
+    <div>Demo for usage icons with full bundle.</div>
     <div>
       <a-icon :name="ICONS.check"/>
     </div>
@@ -8,18 +8,9 @@
 </template>
 
 <script>
-import { AIcon, ICONS_GETTER, addIconsFonts } from 'material-icons';
-
-addIconsFonts();
 
 export default {
   name: 'page',
-  components: {
-    AIcon,
-  },
-  computed: {
-    ICONS: ICONS_GETTER,
-  },
 };
 </script>
 
