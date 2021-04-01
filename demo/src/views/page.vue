@@ -2,7 +2,24 @@
   <div class="page">
     <div>Demo for usage in component without full bundle.</div>
     <div>
-      <a-icon :name="ICONS.check"/>
+      <span class="label">Filled</span>
+      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.filled"/>
+    </div>
+    <div>
+      <span class="label">Outlined</span>
+      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.outlined"/>
+    </div>
+    <div>
+      <span class="label">Round</span>
+      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.round"/>
+    </div>
+    <div>
+      <span class="label">Sharp</span>
+      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.sharp"/>
+    </div>
+    <div>
+      <span class="label">Two tone</span>
+      <a-icon :name="ICONS.delete" :type="ICONS_TYPES['two-tone']"/>
     </div>
   </div>
 </template>
@@ -22,11 +39,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-.page {
-  position: relative;
-  flex: 1;
-  padding: 16px
-}
-</style>

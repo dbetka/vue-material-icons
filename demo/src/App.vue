@@ -42,4 +42,14 @@ body {
     }
   }
 }
+.page {
+  position: relative;
+  flex: 1;
+  padding: 16px;
+  line-height: 24px;
+}
+.label {
+  vertical-align: super;
+  padding: 4px 0;
+}
 </style>

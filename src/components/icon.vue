@@ -12,6 +12,7 @@
 
 <script>
 import { uCheck } from '@dbetka/utils';
+import { ICONS_TYPES } from 'material-icons';
 
 export default {
   name: 'a-icon',
@@ -41,10 +42,11 @@ export default {
     },
     typeClass () {
       switch (this.type) {
-        case 'outlined': return 'f-outlined';
-        case 'round': return 'f-round';
-        case 'sharp': return 'f-sharp';
-        case 'two-tone': return 'f-two-tone';
+        case ICONS_TYPES.filled: return 'f-filled';
+        case ICONS_TYPES.outlined: return 'f-outlined';
+        case ICONS_TYPES.round: return 'f-round';
+        case ICONS_TYPES.sharp: return 'f-sharp';
+        case ICONS_TYPES['two-tone']: return 'f-two-tone';
         default: return '';
       }
     },
