@@ -1,5 +1,5 @@
 /*!
- * @dbetka/material-icons v0.1.1
+ * @dbetka/material-icons v0.1.2
  * (c) dbetka
  * Released under the MIT License.
  */

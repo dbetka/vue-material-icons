@@ -1,6 +1,6 @@
 {
   "name": "@dbetka/material-icons",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Vue Material Design Icons",
   "license": "MIT",
   "main": "./dist/index.js",
