@@ -1,6 +1,7 @@
 <template>
   <i
     class="a-icon"
+    :class="classes"
     :style="style"
     v-on="{ ...$listeners }"
   >
@@ -37,6 +38,20 @@ export default {
         style += `height: ${this.size}px;`;
       }
       return style;
+    },
+    typeClass () {
+      switch (this.type) {
+        case 'outlined': return 'f-outlined';
+        case 'round': return 'f-round';
+        case 'sharp': return 'f-sharp';
+        case 'two-tone': return 'f-two-tone';
+        default: return '';
+      }
+    },
+    classes () {
+      return [
+        this.typeClass,
+      ];
     },
   },
 };
