@@ -1,5 +1,5 @@
 # material-icons
-Vue2 material design icons with easy access to icons names.
+Vue2 material design icons with easy access to icons names and types.
 
 ### How to install by npm
 ```bash
@@ -37,7 +37,7 @@ Vue.component('my-component', AIcon); // component name is `my-component`
 For Vue plugin setup
 ```vue
 <template>
-  <a-icon :name="ICONS.check"/>
+  <a-icon :name="ICONS.check" :type="ICONS_TYPES.outlined"/>
 </template>
 
 <script>
@@ -49,7 +49,7 @@ export default {
 For once in component
 ```vue
 <template>
-  <a-icon :name="ICONS.check"/>
+  <a-icon :name="ICONS.check" :type="ICONS_TYPES.outlined"/>
 </template>
 
 <script>
