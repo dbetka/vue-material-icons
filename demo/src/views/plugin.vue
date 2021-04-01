@@ -1,9 +1,9 @@
 <template>
   <div class="page">
-    <div>Demo for usage icons with full bundle.</div>
+    <div>Demo for usage as Vue plugin.</div>
     <div>
       <span class="label">Filled</span>
-      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.filled"/>
+      <a-icon :name="ICONS.delete" filled/>
     </div>
     <div>
       <span class="label">Outlined</span>

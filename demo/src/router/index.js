@@ -1,20 +1,20 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Page from '../views/page';
-import FullBundle from '../views/full-bundle';
+import Once from '../views/once';
+import Plugin from '../views/plugin';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'page',
-    component: Page,
+    name: 'Plugin',
+    component: Plugin,
   },
   {
-    path: '/full-bundle',
-    name: 'FullBundle',
-    component: FullBundle,
+    path: '/once',
+    name: 'Once',
+    component: Once,
   },
 ];
 

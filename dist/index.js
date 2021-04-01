@@ -2415,19 +2415,8 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = "@import \"src/__csscache__/Material-Icons.css\";\n@import \"src/__csscache__/Material-Icons-Outlined.css\";\n@import \"src/__csscache__/Material-Icons-Round.css\";\n@import \"src/__csscache__/Material-Icons-Sharp.css\";\n@import \"src/__csscache__/Material-Icons-Two-Tone.css\";\n.a-icon {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: \"liga\";\n}\n.a-icon.f-filled {\n  font-family: \"Material Icons\";\n}\n.a-icon.f-outlined {\n  font-family: \"Material Icons Outlined\";\n}\n.a-icon.f-round {\n  font-family: \"Material Icons Round\";\n}\n.a-icon.f-sharp {\n  font-family: \"Material Icons Sharp\";\n}\n.a-icon.f-two-tone {\n  font-family: \"Material Icons Two Tone\";\n}";
+var css_248z = ".a-icon {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: \"liga\";\n}\n.a-icon.f-filled {\n  font-family: \"Material Icons\";\n}\n.a-icon.f-outlined {\n  font-family: \"Material Icons Outlined\";\n}\n.a-icon.f-round {\n  font-family: \"Material Icons Round\";\n}\n.a-icon.f-sharp {\n  font-family: \"Material Icons Sharp\";\n}\n.a-icon.f-two-tone {\n  font-family: \"Material Icons Two Tone\";\n}\n\n@font-face {\n  font-family: \"Material Icons\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialicons/v82/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format(\"truetype\");\n}\n.material-icons {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Outlined\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v52/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format(\"opentype\");\n}\n.material-icons-outlined {\n  font-family: \"Material Icons Outlined\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Round\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconsround/v51/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format(\"opentype\");\n}\n.material-icons-round {\n  font-family: \"Material Icons Round\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Sharp\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconssharp/v52/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format(\"opentype\");\n}\n.material-icons-sharp {\n  font-family: \"Material Icons Sharp\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Two Tone\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v50/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format(\"opentype\");\n}\n.material-icons-two-tone {\n  font-family: \"Material Icons Two Tone\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}";
 styleInject(css_248z);
-
-//   const cssId = 'dbetka-material-icons'; // you could encode the css path itself to generate id..
-//   if (!document.getElementById(cssId)) {
-//     const head = document.getElementsByTagName('head')[0];
-//     const link = document.createElement('link');
-//     link.id = cssId + '-' + key;
-//     link.rel = 'stylesheet';
-//     link.href = CSSLink;
-//     head.appendChild(link);
-//   }
-// }
 
 var ICONS_GETTER = function ICONS_GETTER() {
   return ICONS;
@@ -2440,13 +2429,6 @@ var ICONS_TYPES_GETTER = function ICONS_TYPES_GETTER() {
 var components = {
   AIcon: __vue_component__
 };
-//   install () {
-//     const list = Object.values(ICONS_TYPES)
-//       .map(type => 'https://fonts.googleapis.com/css2?family=' + type.replace(' ', '+'));
-//     for (const [key, CSSLink] of list.entries()) createCSSLink(CSSLink, key);
-//   },
-// };
-
 var IconComputed = {
   install: function install(Vue, options) {
     Vue.mixin({
@@ -2459,7 +2441,6 @@ var IconComputed = {
 };
 var index = {
   install: function install(Vue, options) {
-    // IconFonts.install();
     IconComputed.install(Vue, options);
 
     for (var componentName in components) {

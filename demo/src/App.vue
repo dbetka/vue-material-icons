@@ -2,10 +2,10 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">
-        Individual component
+        Plugin setup
       </router-link>
-      <router-link to="/full-bundle">
-        Full bundle
+      <router-link to="/once">
+        Once usage
       </router-link>
     </div>
     <router-view/>

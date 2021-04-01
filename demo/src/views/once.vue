@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <div>Demo for usage in component without full bundle.</div>
+    <div>Demo for once usage in single component.</div>
     <div>
       <span class="label">Filled</span>
       <a-icon :name="ICONS.delete" filled/>
