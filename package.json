@@ -14,13 +14,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dbetka/material-icons.git"
+    "url": "git+https://github.com/dbetka/vue-material-icons.git"
   },
   "author": "dbetka",
   "bugs": {
-    "url": "https://github.com/dbetka/material-icons/issues"
+    "url": "https://github.com/dbetka/vue-material-icons/issues"
   },
-  "homepage": "https://github.com/dbetka/material-icons#readme",
+  "homepage": "https://github.com/dbetka/vue-material-icons#readme",
   "dependencies": {
     "vue": "^2.6.12"
   },
