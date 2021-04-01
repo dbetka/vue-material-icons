@@ -1,19 +1,34 @@
-const { generateListOfIcons, writeListOfIconsIntoFile } = require('../lib/icon-list-generator');
-const { FgGreen, FgCyan } = require('../lib/console-colors');
-const iconListSource = 'https://fonts.google.com/metadata/icons';
-const iconListDestination = './src/__jscash__/icons-names-list.js';
+const {
+  generateIconsDictionary,
+  generateTypesDictionary,
+  downloadMetadataIcons,
+  writeTextIntoFile,
+} = require('../lib/icon-list-generator');
+const logs = require('../lib/logs');
 
-function createListOfIconsFile () {
-  console.log(FgCyan + '\nDownloading list of icons...');
-  return generateListOfIcons(iconListSource)
-    .then(list => writeListOfIconsIntoFile(iconListDestination, list))
+const iconListSource = 'https://fonts.google.com/metadata/icons';
+const iconListDestination = './src/__jscash__/icons-names.js';
+const iconTypesDestination = './src/__jscash__/icons-types.js';
+
+function createFileWithIcons (data = { icons: [] }) {
+  return generateIconsDictionary(data.icons)
+    .then(dictionary => writeTextIntoFile(iconListDestination, dictionary))
     .then(() => {
-      const splitSourcePath = iconListSource.split('/');
-      const fileName = splitSourcePath[splitSourcePath.length - 1];
-      console.log(FgCyan + fileName + ' ~> ' + iconListDestination);
-      console.log(FgGreen + 'Done!');
+      logs.norm('icons ~> ' + iconListDestination);
+      return data;
+    });
+}
+function createFileWithIconsTypes (data = { families: [] }) {
+  return generateTypesDictionary(data.families)
+    .then(dictionary => writeTextIntoFile(iconTypesDestination, dictionary))
+    .then(() => {
+      logs.norm('types ~> ' + iconTypesDestination);
+      return data;
     });
 }
 
-createListOfIconsFile()
+downloadMetadataIcons(iconListSource)
+  .then(createFileWithIcons)
+  .then(createFileWithIconsTypes)
+  .then(() => logs.success('Done!'))
   .catch(console.error);
