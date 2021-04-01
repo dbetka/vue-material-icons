@@ -1,5 +1,6 @@
 # material-icons
-Vue2 material design icons with easy access to icons names and types.
+Vue2 material design icons with easy access to icons names and types (all available in IDE hints).
+Hints were tested on IntelliJ IDE.
 
 ### How to install by npm
 ```bash
