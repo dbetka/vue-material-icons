@@ -7,8 +7,8 @@ const {
 const logs = require('../lib/logs');
 
 const iconListSource = 'https://fonts.google.com/metadata/icons';
-const iconListDestination = './src/__jscash__/icons-names.js';
-const iconTypesDestination = './src/__jscash__/icons-types.js';
+const iconListDestination = './src/__jscache__/icons-names.js';
+const iconTypesDestination = './src/__jscache__/icons-types.js';
 
 function createFileWithIcons (data = { icons: [] }) {
   return generateIconsDictionary(data.icons)

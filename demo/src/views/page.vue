@@ -25,9 +25,7 @@
 </template>
 
 <script>
-import { AIcon, ICONS, ICONS_TYPES, IconFonts } from 'material-icons';
-
-IconFonts.install();
+import { AIcon, ICONS, ICONS_TYPES } from 'material-icons';
 
 export default {
   name: 'page',

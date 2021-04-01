@@ -9,119 +9,6 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var materialIcons = require('material-icons');
 
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
-}
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-}
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-
-  return arr2;
-}
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-function _createForOfIteratorHelper(o, allowArrayLike) {
-  var it;
-
-  if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
-    if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
-      if (it) o = it;
-      var i = 0;
-
-      var F = function () {};
-
-      return {
-        s: F,
-        n: function () {
-          if (i >= o.length) return {
-            done: true
-          };
-          return {
-            done: false,
-            value: o[i++]
-          };
-        },
-        e: function (e) {
-          throw e;
-        },
-        f: F
-      };
-    }
-
-    throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-  }
-
-  var normalCompletion = true,
-      didErr = false,
-      err;
-  return {
-    s: function () {
-      it = o[Symbol.iterator]();
-    },
-    n: function () {
-      var step = it.next();
-      normalCompletion = step.done;
-      return step;
-    },
-    e: function (e) {
-      didErr = true;
-      err = e;
-    },
-    f: function () {
-      try {
-        if (!normalCompletion && it.return != null) it.return();
-      } finally {
-        if (didErr) throw err;
-      }
-    }
-  };
-}
-
 function unwrapExports (x) {
 	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
 }
@@ -2528,21 +2415,19 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".a-icon {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: \"liga\";\n}\n.a-icon.f-filled {\n  font-family: \"Material Icons\";\n}\n.a-icon.f-outlined {\n  font-family: \"Material Icons Outlined\";\n}\n.a-icon.f-round {\n  font-family: \"Material Icons Round\";\n}\n.a-icon.f-sharp {\n  font-family: \"Material Icons Sharp\";\n}\n.a-icon.f-two-tone {\n  font-family: \"Material Icons Two Tone\";\n}";
+var css_248z = "@import \"src/__csscache__/Material-Icons.css\";\n@import \"src/__csscache__/Material-Icons-Outlined.css\";\n@import \"src/__csscache__/Material-Icons-Round.css\";\n@import \"src/__csscache__/Material-Icons-Sharp.css\";\n@import \"src/__csscache__/Material-Icons-Two-Tone.css\";\n.a-icon {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: \"liga\";\n}\n.a-icon.f-filled {\n  font-family: \"Material Icons\";\n}\n.a-icon.f-outlined {\n  font-family: \"Material Icons Outlined\";\n}\n.a-icon.f-round {\n  font-family: \"Material Icons Round\";\n}\n.a-icon.f-sharp {\n  font-family: \"Material Icons Sharp\";\n}\n.a-icon.f-two-tone {\n  font-family: \"Material Icons Two Tone\";\n}";
 styleInject(css_248z);
 
-function createCSSLink(CSSLink, key) {
-  var cssId = 'dbetka-material-icons'; // you could encode the css path itself to generate id..
-
-  if (!document.getElementById(cssId)) {
-    var head = document.getElementsByTagName('head')[0];
-    var link = document.createElement('link');
-    link.id = cssId + '-' + key;
-    link.rel = 'stylesheet';
-    link.href = CSSLink;
-    head.appendChild(link);
-  }
-}
+//   const cssId = 'dbetka-material-icons'; // you could encode the css path itself to generate id..
+//   if (!document.getElementById(cssId)) {
+//     const head = document.getElementsByTagName('head')[0];
+//     const link = document.createElement('link');
+//     link.id = cssId + '-' + key;
+//     link.rel = 'stylesheet';
+//     link.href = CSSLink;
+//     head.appendChild(link);
+//   }
+// }
 
 var ICONS_GETTER = function ICONS_GETTER() {
   return ICONS;
@@ -2555,30 +2440,13 @@ var ICONS_TYPES_GETTER = function ICONS_TYPES_GETTER() {
 var components = {
   AIcon: __vue_component__
 };
-var IconFonts = {
-  install: function install() {
-    var list = Object.values(ICONS_TYPES).map(function (type) {
-      return 'https://fonts.googleapis.com/css2?family=' + type.replace(' ', '+');
-    });
+//   install () {
+//     const list = Object.values(ICONS_TYPES)
+//       .map(type => 'https://fonts.googleapis.com/css2?family=' + type.replace(' ', '+'));
+//     for (const [key, CSSLink] of list.entries()) createCSSLink(CSSLink, key);
+//   },
+// };
 
-    var _iterator = _createForOfIteratorHelper(list.entries()),
-        _step;
-
-    try {
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var _step$value = _slicedToArray(_step.value, 2),
-            key = _step$value[0],
-            CSSLink = _step$value[1];
-
-        createCSSLink(CSSLink, key);
-      }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
-    }
-  }
-};
 var IconComputed = {
   install: function install(Vue, options) {
     Vue.mixin({
@@ -2591,7 +2459,7 @@ var IconComputed = {
 };
 var index = {
   install: function install(Vue, options) {
-    IconFonts.install();
+    // IconFonts.install();
     IconComputed.install(Vue, options);
 
     for (var componentName in components) {
@@ -2605,6 +2473,5 @@ exports.AIcon = __vue_component__;
 exports.ICONS = ICONS;
 exports.ICONS_TYPES = ICONS_TYPES;
 exports.IconComputed = IconComputed;
-exports.IconFonts = IconFonts;
 exports.default = index;
 //# sourceMappingURL=index.js.map

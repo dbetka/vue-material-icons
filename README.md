@@ -18,18 +18,16 @@ Vue.use(MaterialIcons);
 
 Add component by own
 ```js
-import { AIcon, IconComputed, IconFonts } from '@dbetka/material-icons';
+import { AIcon, IconComputed } from '@dbetka/material-icons';
 
-Vue.use(IconFonts)
 Vue.use(IconComputed)
 Vue.component(AIcon.name, AIcon); // component name is `a-icon`
 ```
 
 Set own component name
 ```js
-import { AIcon, IconComputed, IconFonts } from '@dbetka/material-icons';
+import { AIcon, IconComputed } from '@dbetka/material-icons';
 
-Vue.use(IconFonts)
 Vue.use(IconComputed)
 Vue.component('my-component', AIcon); // component name is `my-component`
 ```
@@ -56,9 +54,7 @@ For once in component
 </template>
 
 <script>
-import { AIcon, ICONS, ICONS_TYPES, IconFonts } from '@dbetka/material-icons';
-
-IconFonts.install();
+import { AIcon, ICONS, ICONS_TYPES } from '@dbetka/material-icons';
 
 export default {
   name: 'some-page',
