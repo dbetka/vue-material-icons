@@ -17,28 +17,20 @@ Vue.use(MaterialIcons);
 
 Add component by own
 ```js
-import { AIcon, ICONS_GETTER, addIconsFonts } from '@dbetka/material-icons';
+import { AIcon, IconComputed, IconFonts } from '@dbetka/material-icons';
 
-addIconsFonts();
+Vue.use(IconFonts)
+Vue.use(IconComputed)
 Vue.component(AIcon.name, AIcon); // component name is `a-icon`
-Vue.mixin({
-  computed: {
-    ICONS: ICONS_GETTER,
-  },
-});
 ```
 
 Set own component name
 ```js
-import { AIcon, ICONS_GETTER, addIconsFonts } from '@dbetka/material-icons';
+import { AIcon, IconComputed, IconFonts } from '@dbetka/material-icons';
 
-addIconsFonts();
+Vue.use(IconFonts)
+Vue.use(IconComputed)
 Vue.component('my-component', AIcon); // component name is `my-component`
-Vue.mixin({
-  computed: {
-    ICONS: ICONS_GETTER,
-  },
-});
 ```
 
 ## Usage
@@ -54,16 +46,16 @@ export default {
 };
 </script>
 ```
-For a setup in single component
+For once in component
 ```vue
 <template>
   <a-icon :name="ICONS.check"/>
 </template>
 
 <script>
-import { AIcon, ICONS_GETTER, addIconsFonts } from '@dbetka/material-icons';
+import { AIcon, ICONS, ICONS_TYPES, IconFonts } from '@dbetka/material-icons';
 
-addIconsFonts();
+IconFonts.install();
 
 export default {
   name: 'some-page',
@@ -71,16 +63,28 @@ export default {
     AIcon,
   },
   computed: {
-    ICONS: ICONS_GETTER,
+    ICONS: () => ICONS,
+    ICONS_TYPES: () => ICONS_TYPES,
   },
 };
 </script>
 ```
 
-#### Actual list of icons
+### Actual list of icons
 ```js
 import { ICONS } from '@dbetka/material-icons';
 
 ICONS.check // returns `check`
 ICONS.coronavirus // returns `coronavirus`
+```
+
+### Actual list of icon types
+```js
+import { ICONS_TYPES } from '@dbetka/material-icons';
+
+ICONS_TYPES.filled // returns `Material Icons`
+ICONS_TYPES.outlined // returns `Material Icons Outlined`
+ICONS_TYPES.round // returns `Material Icons Round`
+ICONS_TYPES.sharp // returns `Material Icons Sharp`
+ICONS_TYPES['two-tone'] // returns `Material Icons Two Tone`
 ```

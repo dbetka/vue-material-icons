@@ -2522,47 +2522,55 @@ function createCSSLink(CSSLink, key) {
   }
 }
 
-function addIconsFonts() {
-  var list = Object.values(ICONS_TYPES).map(function (type) {
-    return 'https://fonts.googleapis.com/css2?family=' + type.replace(' ', '+');
-  });
-
-  var _iterator = _createForOfIteratorHelper(list.entries()),
-      _step;
-
-  try {
-    for (_iterator.s(); !(_step = _iterator.n()).done;) {
-      var _step$value = _slicedToArray(_step.value, 2),
-          key = _step$value[0],
-          CSSLink = _step$value[1];
-
-      createCSSLink(CSSLink, key);
-    }
-  } catch (err) {
-    _iterator.e(err);
-  } finally {
-    _iterator.f();
-  }
-}
-
 var ICONS_GETTER = function ICONS_GETTER() {
   return ICONS;
 };
+
 var ICONS_TYPES_GETTER = function ICONS_TYPES_GETTER() {
   return ICONS_TYPES;
 };
+
 var components = {
   AIcon: __vue_component__
 };
-var index = {
+var IconFonts = {
+  install: function install() {
+    var list = Object.values(ICONS_TYPES).map(function (type) {
+      return 'https://fonts.googleapis.com/css2?family=' + type.replace(' ', '+');
+    });
+
+    var _iterator = _createForOfIteratorHelper(list.entries()),
+        _step;
+
+    try {
+      for (_iterator.s(); !(_step = _iterator.n()).done;) {
+        var _step$value = _slicedToArray(_step.value, 2),
+            key = _step$value[0],
+            CSSLink = _step$value[1];
+
+        createCSSLink(CSSLink, key);
+      }
+    } catch (err) {
+      _iterator.e(err);
+    } finally {
+      _iterator.f();
+    }
+  }
+};
+var IconComputed = {
   install: function install(Vue, options) {
-    addIconsFonts();
     Vue.mixin({
       computed: {
         ICONS: ICONS_GETTER,
         ICONS_TYPES: ICONS_TYPES_GETTER
       }
     });
+  }
+};
+var index = {
+  install: function install(Vue, options) {
+    IconFonts.install();
+    IconComputed.install(Vue, options);
 
     for (var componentName in components) {
       var component = components[componentName];
@@ -2573,9 +2581,8 @@ var index = {
 
 exports.AIcon = __vue_component__;
 exports.ICONS = ICONS;
-exports.ICONS_GETTER = ICONS_GETTER;
 exports.ICONS_TYPES = ICONS_TYPES;
-exports.ICONS_TYPES_GETTER = ICONS_TYPES_GETTER;
-exports.addIconsFonts = addIconsFonts;
+exports.IconComputed = IconComputed;
+exports.IconFonts = IconFonts;
 exports.default = index;
 //# sourceMappingURL=index.js.map

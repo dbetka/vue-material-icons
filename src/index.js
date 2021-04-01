@@ -14,15 +14,9 @@ function createCSSLink (CSSLink, key) {
     head.appendChild(link);
   }
 }
-function addIconsFonts () {
-  const list = Object.values(ICONS_TYPES)
-    .map(type => 'https://fonts.googleapis.com/css2?family=' + type.replace(' ', '+'));
-  for (const [key, CSSLink] of list.entries()) createCSSLink(CSSLink, key);
-}
 
-export const ICONS_GETTER = () => ICONS;
-export const ICONS_TYPES_GETTER = () => ICONS_TYPES;
-
+const ICONS_GETTER = () => ICONS;
+const ICONS_TYPES_GETTER = () => ICONS_TYPES;
 const components = {
   AIcon,
 };
@@ -31,18 +25,31 @@ export {
   AIcon,
   ICONS,
   ICONS_TYPES,
-  addIconsFonts,
 };
 
-export default {
+export const IconFonts = {
+  install () {
+    const list = Object.values(ICONS_TYPES)
+      .map(type => 'https://fonts.googleapis.com/css2?family=' + type.replace(' ', '+'));
+    for (const [key, CSSLink] of list.entries()) createCSSLink(CSSLink, key);
+  },
+};
+
+export const IconComputed = {
   install (Vue, options) {
-    addIconsFonts();
     Vue.mixin({
       computed: {
         ICONS: ICONS_GETTER,
         ICONS_TYPES: ICONS_TYPES_GETTER,
       },
     });
+  },
+};
+
+export default {
+  install (Vue, options) {
+    IconFonts.install();
+    IconComputed.install(Vue, options);
     for (const componentName in components) {
       const component = components[componentName];
       Vue.component(component.name, component);

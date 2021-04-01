@@ -25,9 +25,9 @@
 </template>
 
 <script>
-import { AIcon, ICONS_GETTER, addIconsFonts } from 'material-icons';
+import { AIcon, ICONS, ICONS_TYPES, IconFonts } from 'material-icons';
 
-addIconsFonts();
+IconFonts.install();
 
 export default {
   name: 'page',
@@ -35,7 +35,8 @@ export default {
     AIcon,
   },
   computed: {
-    ICONS: ICONS_GETTER,
+    ICONS: () => ICONS,
+    ICONS_TYPES: () => ICONS_TYPES,
   },
 };
 </script>
