@@ -3,23 +3,23 @@
     <div>Demo for usage in component without full bundle.</div>
     <div>
       <span class="label">Filled</span>
-      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.filled"/>
+      <a-icon :name="ICONS.delete" filled/>
     </div>
     <div>
       <span class="label">Outlined</span>
-      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.outlined"/>
+      <a-icon :name="ICONS.delete" outlined/>
     </div>
     <div>
       <span class="label">Round</span>
-      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.round"/>
+      <a-icon :name="ICONS.delete" round/>
     </div>
     <div>
       <span class="label">Sharp</span>
-      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.sharp"/>
+      <a-icon :name="ICONS.delete" sharp/>
     </div>
     <div>
       <span class="label">Two tone</span>
-      <a-icon :name="ICONS.delete" :type="ICONS_TYPES['two-tone']"/>
+      <a-icon :name="ICONS.delete" two-tone/>
     </div>
   </div>
 </template>

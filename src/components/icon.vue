@@ -17,18 +17,14 @@ import { ICONS_TYPES } from 'material-icons';
 export default {
   name: 'a-icon',
   props: {
-    type: {
-      type: String,
-      default: '',
-    },
-    name: {
-      type: String,
-      required: true,
-    },
-    size: {
-      type: [String, Number],
-      default: undefined,
-    },
+    type: { type: String, default: '' },
+    name: { type: String, required: true },
+    size: { type: [String, Number], default: undefined },
+    filled: { type: Boolean },
+    outlined: { type: Boolean },
+    round: { type: Boolean },
+    sharp: { type: Boolean },
+    twoTone: { type: Boolean },
   },
   computed: {
     style () {
@@ -40,7 +36,7 @@ export default {
       }
       return style;
     },
-    typeClass () {
+    typeClassFromType () {
       switch (this.type) {
         case ICONS_TYPES.filled: return 'f-filled';
         case ICONS_TYPES.outlined: return 'f-outlined';
@@ -50,9 +46,18 @@ export default {
         default: return '';
       }
     },
+    typeClassFromParams () {
+      if (this.filled) return 'f-filled';
+      if (this.outlined) return 'f-outlined';
+      if (this.round) return 'f-round';
+      if (this.sharp) return 'f-sharp';
+      if (this.twoTone) return 'f-two-tone';
+      else return '';
+    },
     classes () {
       return [
-        this.typeClass,
+        this.typeClassFromType,
+        this.typeClassFromParams,
       ];
     },
   },

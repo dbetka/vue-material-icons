@@ -37,6 +37,7 @@ Vue.component('my-component', AIcon); // component name is `my-component`
 For Vue plugin setup
 ```vue
 <template>
+  <a-icon :name="ICONS.check" outlined/>
   <a-icon :name="ICONS.check" :type="ICONS_TYPES.outlined"/>
 </template>
 
@@ -49,6 +50,7 @@ export default {
 For once in component
 ```vue
 <template>
+  <a-icon :name="ICONS.check" outlined/>
   <a-icon :name="ICONS.check" :type="ICONS_TYPES.outlined"/>
 </template>
 
@@ -70,7 +72,7 @@ export default {
 </script>
 ```
 
-### Actual list of icons
+### Access to list of icons
 ```js
 import { ICONS } from '@dbetka/material-icons';
 
@@ -78,7 +80,7 @@ ICONS.check // returns `check`
 ICONS.coronavirus // returns `coronavirus`
 ```
 
-### Actual list of icon types
+### Access to list of icon types
 ```js
 import { ICONS_TYPES } from '@dbetka/material-icons';
 

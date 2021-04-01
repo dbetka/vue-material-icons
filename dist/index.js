@@ -533,6 +533,21 @@ var script = {
     size: {
       type: [String, Number],
       "default": undefined
+    },
+    filled: {
+      type: Boolean
+    },
+    outlined: {
+      type: Boolean
+    },
+    round: {
+      type: Boolean
+    },
+    sharp: {
+      type: Boolean
+    },
+    twoTone: {
+      type: Boolean
     }
   },
   computed: {
@@ -547,7 +562,7 @@ var script = {
 
       return style;
     },
-    typeClass: function typeClass() {
+    typeClassFromType: function typeClassFromType() {
       switch (this.type) {
         case materialIcons.ICONS_TYPES.filled:
           return 'f-filled';
@@ -568,8 +583,15 @@ var script = {
           return '';
       }
     },
+    typeClassFromParams: function typeClassFromParams() {
+      if (this.filled) return 'f-filled';
+      if (this.outlined) return 'f-outlined';
+      if (this.round) return 'f-round';
+      if (this.sharp) return 'f-sharp';
+      if (this.twoTone) return 'f-two-tone';else return '';
+    },
     classes: function classes() {
-      return [this.typeClass];
+      return [this.typeClassFromType, this.typeClassFromParams];
     }
   }
 };
