@@ -8,7 +8,7 @@
     "download-icons": "node bin/create-list-of-icons.js",
     "download-css-and-fonts": "node bin/download-css-and-fonts.js",
     "dev": "webpack serve --config webpack.dev.js",
-    "build": "npx bili"
+    "build": "npx bili && npx bili --input ./src/local.js"
   },
   "files": [
     "dist"

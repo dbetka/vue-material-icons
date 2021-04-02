@@ -1,4 +1,4 @@
-import './index.sass';
+import './local.sass';
 import { install } from './install';
 export * from './export-list';
 

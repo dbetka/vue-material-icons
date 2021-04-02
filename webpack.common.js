@@ -33,6 +33,7 @@ module.exports = {
       'vue': 'vue/dist/vue.esm.js',
       'demo': resolve('demo'),
       'material-icons': resolve('src/index.js'),
+      'material-icons-local': resolve('src/local.js'),
       'router': resolve('demo/src/router'),
       'utils': resolve('src/utils'),
     },
