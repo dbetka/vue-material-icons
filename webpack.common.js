@@ -32,8 +32,8 @@ module.exports = {
     alias: {
       'vue': 'vue/dist/vue.esm.js',
       'demo': resolve('demo'),
-      'material-icons': resolve('src/index.js'),
-      'material-icons-local': resolve('src/local.js'),
+      'material-icons': resolve('dist/index.js'),
+      'material-icons-local': resolve('dist/local.js'),
       'router': resolve('demo/src/router'),
       'utils': resolve('src/utils'),
     },
