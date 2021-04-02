@@ -12,7 +12,7 @@
 
 <script>
 import { uCheck } from '@dbetka/utils';
-import { ICONS_TYPES } from 'material-icons';
+import { ICONS_TYPES_GETTER as ICONS_TYPES } from 'utils/IconComputed';
 
 export default {
   name: 'a-icon',
@@ -27,6 +27,7 @@ export default {
     twoTone: { type: Boolean },
   },
   computed: {
+    ICONS_TYPES,
     style () {
       let style = '';
       if (uCheck.isDefined(this.size)) {
@@ -38,11 +39,11 @@ export default {
     },
     typeClassFromType () {
       switch (this.type) {
-        case ICONS_TYPES.filled: return 'f-filled';
-        case ICONS_TYPES.outlined: return 'f-outlined';
-        case ICONS_TYPES.round: return 'f-round';
-        case ICONS_TYPES.sharp: return 'f-sharp';
-        case ICONS_TYPES['two-tone']: return 'f-two-tone';
+        case this.ICONS_TYPES.filled: return 'f-filled';
+        case this.ICONS_TYPES.outlined: return 'f-outlined';
+        case this.ICONS_TYPES.round: return 'f-round';
+        case this.ICONS_TYPES.sharp: return 'f-sharp';
+        case this.ICONS_TYPES['two-tone']: return 'f-two-tone';
         default: return '';
       }
     },

@@ -1,5 +1,5 @@
-import { IconComputed } from './IconComputed';
-import { components } from './components';
+import { IconComputed } from 'utils/IconComputed';
+import { components } from 'utils/components';
 
 export function install (Vue, options) {
   IconComputed.install(Vue, options);

@@ -7,8 +7,6 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var materialIcons = require('material-icons');
-
 function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
   var insertAt = ref.insertAt;
@@ -1837,11 +1835,9 @@ var ICONS_TYPES = {
 var ICONS_GETTER = function ICONS_GETTER() {
   return ICONS;
 };
-
 var ICONS_TYPES_GETTER = function ICONS_TYPES_GETTER() {
   return ICONS_TYPES;
 };
-
 var IconComputed = {
   install: function install(Vue, options) {
     Vue.mixin({
@@ -2282,6 +2278,7 @@ var script = {
     }
   },
   computed: {
+    ICONS_TYPES: ICONS_TYPES_GETTER,
     style: function style() {
       var style = '';
 
@@ -2295,19 +2292,19 @@ var script = {
     },
     typeClassFromType: function typeClassFromType() {
       switch (this.type) {
-        case materialIcons.ICONS_TYPES.filled:
+        case this.ICONS_TYPES.filled:
           return 'f-filled';
 
-        case materialIcons.ICONS_TYPES.outlined:
+        case this.ICONS_TYPES.outlined:
           return 'f-outlined';
 
-        case materialIcons.ICONS_TYPES.round:
+        case this.ICONS_TYPES.round:
           return 'f-round';
 
-        case materialIcons.ICONS_TYPES.sharp:
+        case this.ICONS_TYPES.sharp:
           return 'f-sharp';
 
-        case materialIcons.ICONS_TYPES['two-tone']:
+        case this.ICONS_TYPES['two-tone']:
           return 'f-two-tone';
 
         default:
