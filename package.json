@@ -6,7 +6,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "download-icons": "node bin/create-list-of-icons.js",
-    "download-css-fonts": "node bin/download-css-fonts.js",
+    "download-css-and-fonts": "node bin/download-css-and-fonts.js",
     "dev": "webpack serve --config webpack.dev.js",
     "build": "npx bili"
   },

@@ -3,7 +3,7 @@
     <div>Demo for usage as Vue plugin.</div>
     <div>
       <span class="label">Filled</span>
-      <a-icon :name="ICONS.delete" filled/>
+      <a-icon :name="ICONS.home" filled/>
     </div>
     <div>
       <span class="label">Outlined</span>
