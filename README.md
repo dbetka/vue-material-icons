@@ -1,4 +1,4 @@
-# material-icons
+# vue-material-icons
 Vue2 material design icons with easy access to icons names and types (all available in IDE hints).
 Hints were tested on IntelliJ IDE.
 
