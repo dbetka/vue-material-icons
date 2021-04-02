@@ -20,27 +20,6 @@
 }
 
 @font-face {
-  font-family: 'Material Icons Sharp';
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/Material-Icons-Sharp.otf") format('opentype');
-}
-
-.material-icons-sharp {
-  font-family: 'Material Icons Sharp';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-}
-
-@font-face {
   font-family: 'Material Icons Outlined';
   font-style: normal;
   font-weight: 400;
@@ -62,14 +41,14 @@
 }
 
 @font-face {
-  font-family: 'Material Icons Two Tone';
+  font-family: 'Material Icons Round';
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/Material-Icons-Two-Tone.otf") format('opentype');
+  src: url("/fonts/Material-Icons-Round.otf") format('opentype');
 }
 
-.material-icons-two-tone {
-  font-family: 'Material Icons Two Tone';
+.material-icons-round {
+  font-family: 'Material Icons Round';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -83,14 +62,35 @@
 }
 
 @font-face {
-  font-family: 'Material Icons Round';
+  font-family: 'Material Icons Sharp';
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/Material-Icons-Round.otf") format('opentype');
+  src: url("/fonts/Material-Icons-Sharp.otf") format('opentype');
 }
 
-.material-icons-round {
-  font-family: 'Material Icons Round';
+.material-icons-sharp {
+  font-family: 'Material Icons Sharp';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+@font-face {
+  font-family: 'Material Icons Two Tone';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Material-Icons-Two-Tone.otf") format('opentype');
+}
+
+.material-icons-two-tone {
+  font-family: 'Material Icons Two Tone';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;

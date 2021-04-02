@@ -11,10 +11,11 @@ const iconListDestination = './src/__jscache__/icons-names.js';
 const iconTypesDestination = './src/__jscache__/icons-types.js';
 
 function createFileWithIcons (data = { icons: [] }) {
+  logs.normTitle('Saving icons names and types...');
   return generateIconsDictionary(data.icons)
     .then(dictionary => writeTextIntoFile(iconListDestination, dictionary))
     .then(() => {
-      logs.norm('icons ~> ' + iconListDestination);
+      logs.done(iconListDestination);
       return data;
     });
 }
@@ -22,7 +23,7 @@ function createFileWithIconsTypes (data = { families: [] }) {
   return generateTypesDictionary(data.families)
     .then(dictionary => writeTextIntoFile(iconTypesDestination, dictionary))
     .then(() => {
-      logs.norm('types ~> ' + iconTypesDestination);
+      logs.done(iconTypesDestination);
       return data;
     });
 }
@@ -30,5 +31,5 @@ function createFileWithIconsTypes (data = { families: [] }) {
 downloadMetadataIcons(iconListSource)
   .then(createFileWithIcons)
   .then(createFileWithIconsTypes)
-  .then(() => logs.success('Done!'))
+  .then(() => logs.allDone())
   .catch(console.error);

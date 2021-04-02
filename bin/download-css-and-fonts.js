@@ -14,7 +14,7 @@ const importCSSFileName = 'local-icons.css';
 const fontsContent = [];
 
 function downloadCSSAndFonts (data = { families: [] }) {
-  logs.norm('\nDownloading CSS files...');
+  logs.normTitle('Downloading CSS files...');
   return new Promise((resolve, reject) => {
     const links = data.families
       .map(type => 'https://fonts.googleapis.com/css2?family=' + type.replace(/\s/g, '+'));
@@ -25,7 +25,7 @@ function downloadCSSAndFonts (data = { families: [] }) {
       const fileNameWithExtension = fileName + '.css';
       return download(url, CSSFontsDestination, { filename: fileNameWithExtension })
         .then(content => saveURLFromCSS(fileName, content))
-        .then(() => logs.splitSuccess(fileNameWithExtension, ' done'));
+        .then(() => logs.done(fileNameWithExtension));
     }))
       .then(() => resolve(data.families))
       .catch(reject);
@@ -33,6 +33,7 @@ function downloadCSSAndFonts (data = { families: [] }) {
 }
 
 function createSASSImportFile (families) {
+  logs.normTitle('Create SASS import file...');
   return new Promise((resolve, reject) => {
     const data = families
       .map(fileName => `@import "${CSSFontsDestination}${fileName.replace(/\s/g, '-')}"`)
@@ -40,7 +41,7 @@ function createSASSImportFile (families) {
     fs.writeFile(CSSFontsDestination + importSASSFileName, data, err => {
       if (err) reject(err);
       else {
-        logs.splitSuccess('\n' + importSASSFileName, ' done');
+        logs.done(importSASSFileName);
         resolve();
       }
     });
@@ -61,11 +62,11 @@ function saveURLFromCSS (fileName, content) {
 }
 
 function downloadFonts () {
-  logs.norm('\nDownloading fonts files...');
+  logs.normTitle('Downloading fonts files...');
   return new Promise((resolve, reject) => {
     Promise.all(fontsContent.map(({ url, file }) => {
       return download(url, fontsDestination, { filename: file })
-        .then(() => logs.splitSuccess(file, ' done'));
+        .then(() => logs.done(file));
     }))
       .then(resolve)
       .catch(reject);
@@ -73,6 +74,7 @@ function downloadFonts () {
 }
 
 function createCSSImportFile () {
+  logs.normTitle('Create CSS import file...');
   return new Promise((resolve, reject) => {
     const data = fontsContent
       .map(({ file, content }) => content.replace(/url\(\S*\)/g, `url("${fontsPublic + file}")`))
@@ -80,7 +82,7 @@ function createCSSImportFile () {
     fs.writeFile(CSSFontsDestination + importCSSFileName, data, err => {
       if (err) reject(err);
       else {
-        logs.splitSuccess('\n' + importCSSFileName, ' done');
+        logs.done(importCSSFileName);
         resolve();
       }
     });
@@ -92,5 +94,5 @@ downloadMetadataIcons(iconsMetadataURL)
   .then(createSASSImportFile)
   .then(downloadFonts)
   .then(createCSSImportFile)
-  .then(() => logs.success('\nAll done!'))
+  .then(() => logs.allDone())
   .catch(console.error);
