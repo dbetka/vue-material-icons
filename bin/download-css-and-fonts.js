@@ -7,8 +7,8 @@ const logs = require('../lib/logs');
 
 const iconsMetadataURL = 'https://fonts.google.com/metadata/icons';
 const CSSFontsDestination = 'src/__csscache__/';
-const fontsDestination = 'demo/public/fonts/';
-const fontsPublic = '/fonts/';
+const fontsDestination = 'demo/public/html-api/fonts/material-icons/';
+const fontsPublicURL = '/html-api/fonts/material-icons/';
 const importSASSFileName = 'icons.sass';
 const importCSSFileName = 'local-icons.css';
 const fontsContent = [];
@@ -77,7 +77,7 @@ function createCSSImportFile () {
   logs.normTitle('Create CSS import file...');
   return new Promise((resolve, reject) => {
     const data = fontsContent
-      .map(({ file, content }) => content.replace(/url\(\S*\)/g, `url("${fontsPublic + file}")`))
+      .map(({ file, content }) => content.replace(/url\(\S*\)/g, `url("${fontsPublicURL + file}")`))
       .join('\n');
     fs.writeFile(CSSFontsDestination + importCSSFileName, data, err => {
       if (err) reject(err);
