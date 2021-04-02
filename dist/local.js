@@ -1,5 +1,5 @@
 /*!
- * @dbetka/vue-material-icons v0.2.1
+ * @dbetka/vue-material-icons v0.2.2
  * (c) dbetka
  * Released under the MIT License.
  */
