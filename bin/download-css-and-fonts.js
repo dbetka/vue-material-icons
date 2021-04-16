@@ -13,20 +13,27 @@ const importSASSFileName = 'icons.sass';
 const importCSSFileName = 'local-icons.css';
 const fontsContent = [];
 
+function downloadCSSAndFontsRecursive (data, links, iter = 0) {
+  const url = links[iter];
+  const fileName = data.families[iter].replace(/\s/g, '-');
+  const fileNameWithExtension = fileName + '.css';
+  return download(url, CSSFontsDestination, { filename: fileNameWithExtension })
+    .then(content => {
+      saveURLFromCSS(fileName, content);
+      logs.done(fileNameWithExtension);
+      iter++;
+      if (links.length > iter) return downloadCSSAndFontsRecursive(data, links, iter);
+      else return Promise.resolve();
+    });
+}
+
 function downloadCSSAndFonts (data = { families: [] }) {
   logs.normTitle('Downloading CSS files...');
   return new Promise((resolve, reject) => {
     const links = data.families
       .map(type => 'https://fonts.googleapis.com/css2?family=' + type.replace(/\s/g, '+'));
 
-    Promise.all(links.map(url => {
-      const id = links.indexOf(url);
-      const fileName = data.families[id].replace(/\s/g, '-');
-      const fileNameWithExtension = fileName + '.css';
-      return download(url, CSSFontsDestination, { filename: fileNameWithExtension })
-        .then(content => saveURLFromCSS(fileName, content))
-        .then(() => logs.done(fileNameWithExtension));
-    }))
+    downloadCSSAndFontsRecursive(data, links)
       .then(() => resolve(data.families))
       .catch(reject);
   });
@@ -61,13 +68,21 @@ function saveURLFromCSS (fileName, content) {
   });
 }
 
+function downloadFontRecursive (fontsContent, iter = 0) {
+  const { url, file } = fontsContent[iter];
+  return download(url, fontsDestination, { filename: file })
+    .then(() => {
+      logs.done(file);
+      iter++;
+      if (fontsContent.length > iter) return downloadFontRecursive(fontsContent, iter);
+      else return Promise.resolve();
+    });
+}
+
 function downloadFonts () {
   logs.normTitle('Downloading fonts files...');
   return new Promise((resolve, reject) => {
-    Promise.all(fontsContent.map(({ url, file }) => {
-      return download(url, fontsDestination, { filename: file })
-        .then(() => logs.done(file));
-    }))
+    downloadFontRecursive(fontsContent)
       .then(resolve)
       .catch(reject);
   });

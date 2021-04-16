@@ -34,7 +34,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".a-icon {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: \"liga\";\n}\n.a-icon.f-filled {\n  font-family: \"Material Icons\";\n}\n.a-icon.f-outlined {\n  font-family: \"Material Icons Outlined\";\n}\n.a-icon.f-round {\n  font-family: \"Material Icons Round\";\n}\n.a-icon.f-sharp {\n  font-family: \"Material Icons Sharp\";\n}\n.a-icon.f-two-tone {\n  font-family: \"Material Icons Two Tone\";\n}\n\n@font-face {\n  font-family: \"Material Icons\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialicons/v83/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format(\"truetype\");\n}\n.material-icons {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Outlined\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v54/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format(\"opentype\");\n}\n.material-icons-outlined {\n  font-family: \"Material Icons Outlined\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Round\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconsround/v53/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format(\"opentype\");\n}\n.material-icons-round {\n  font-family: \"Material Icons Round\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Sharp\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconssharp/v54/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format(\"opentype\");\n}\n.material-icons-sharp {\n  font-family: \"Material Icons Sharp\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Two Tone\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v52/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format(\"opentype\");\n}\n.material-icons-two-tone {\n  font-family: \"Material Icons Two Tone\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}";
+var css_248z = ".a-icon {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: \"liga\";\n}\n.a-icon.f-filled {\n  font-family: \"Material Icons\";\n}\n.a-icon.f-outlined {\n  font-family: \"Material Icons Outlined\";\n}\n.a-icon.f-round {\n  font-family: \"Material Icons Round\";\n}\n.a-icon.f-sharp {\n  font-family: \"Material Icons Sharp\";\n}\n.a-icon.f-two-tone {\n  font-family: \"Material Icons Two Tone\";\n}\n\n@font-face {\n  font-family: \"Material Icons\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialicons/v85/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format(\"truetype\");\n}\n.material-icons {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Outlined\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v56/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format(\"opentype\");\n}\n.material-icons-outlined {\n  font-family: \"Material Icons Outlined\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Round\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconsround/v55/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format(\"opentype\");\n}\n.material-icons-round {\n  font-family: \"Material Icons Round\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Sharp\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconssharp/v56/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format(\"opentype\");\n}\n.material-icons-sharp {\n  font-family: \"Material Icons Sharp\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Two Tone\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v54/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format(\"opentype\");\n}\n.material-icons-two-tone {\n  font-family: \"Material Icons Two Tone\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}";
 styleInject(css_248z);
 
 var ICONS = {
@@ -183,6 +183,7 @@ var ICONS = {
   'apps': 'apps',
   'architecture': 'architecture',
   'archive': 'archive',
+  'area_chart': 'area_chart',
   'arrow_back': 'arrow_back',
   'arrow_back_ios': 'arrow_back_ios',
   'arrow_back_ios_new': 'arrow_back_ios_new',
@@ -468,10 +469,12 @@ var ICONS = {
   'crop_portrait': 'crop_portrait',
   'crop_rotate': 'crop_rotate',
   'crop_square': 'crop_square',
+  'cruelty_free': 'cruelty_free',
   'dangerous': 'dangerous',
   'dark_mode': 'dark_mode',
   'dashboard': 'dashboard',
   'dashboard_customize': 'dashboard_customize',
+  'data_exploration': 'data_exploration',
   'data_saver_off': 'data_saver_off',
   'data_saver_on': 'data_saver_on',
   'data_usage': 'data_usage',
@@ -521,6 +524,7 @@ var ICONS = {
   'directions_walk': 'directions_walk',
   'dirty_lens': 'dirty_lens',
   'disabled_by_default': 'disabled_by_default',
+  'disabled_visible': 'disabled_visible',
   'disc_full': 'disc_full',
   'dns': 'dns',
   'do_disturb': 'do_disturb',
@@ -560,6 +564,7 @@ var ICONS = {
   'draw': 'draw',
   'drive_eta': 'drive_eta',
   'drive_file_move': 'drive_file_move',
+  'drive_file_move_rtl': 'drive_file_move_rtl',
   'drive_file_rename_outline': 'drive_file_rename_outline',
   'drive_folder_upload': 'drive_folder_upload',
   'dry': 'dry',
@@ -868,6 +873,7 @@ var ICONS = {
   'import_export': 'import_export',
   'important_devices': 'important_devices',
   'inbox': 'inbox',
+  'incomplete_circle': 'incomplete_circle',
   'indeterminate_check_box': 'indeterminate_check_box',
   'info': 'info',
   'input': 'input',
@@ -1673,6 +1679,7 @@ var ICONS = {
   'timer_3': 'timer_3',
   'timer_3_select': 'timer_3_select',
   'timer_off': 'timer_off',
+  'tips_and_updates': 'tips_and_updates',
   'title': 'title',
   'toc': 'toc',
   'today': 'today',
@@ -1779,6 +1786,7 @@ var ICONS = {
   'watch_later': 'watch_later',
   'water': 'water',
   'water_damage': 'water_damage',
+  'water_drop': 'water_drop',
   'waterfall_chart': 'waterfall_chart',
   'waves': 'waves',
   'waving_hand': 'waving_hand',
