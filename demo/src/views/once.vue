@@ -6,6 +6,10 @@
       <a-icon :name="ICONS.delete" filled/>
     </div>
     <div>
+      <span class="label">Filled and colored</span>
+      <a-icon :name="ICONS.delete" filled class="f-red"/>
+    </div>
+    <div>
       <span class="label">Outlined</span>
       <a-icon :name="ICONS.delete" outlined/>
     </div>
@@ -38,3 +42,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.a-icon.f-red {
+  color: red;
+}
+</style>

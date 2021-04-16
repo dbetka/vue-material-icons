@@ -3,14 +3,16 @@
 Hints were tested on IntelliJ IDE. Fonts based on https://fonts.google.com/icons.
 
 - [How to start](#how-to-start)
-   - [Installation](#installation)
-   - [Setup in project](#setup-in-project)
-   - [Own fonts for icons](#own-fonts-for-icons)
-- [Getting Started](#getting-started)
-   - [Usage](#usage)
-   - [Access to icon list](#access-to-icon-list)
-   - [Access to list of icon types](#access-to-list-of-icon-types)
-   - [Set icon size by style](#set-icon-size-by-style)
+  - [Installation](#installation)
+  - [Setup in project](#setup-in-project)
+  - [Own fonts for icons](#own-fonts-for-icons)
+- [Usage](#usage)
+  - [Base examples](#base-examples)
+  - [Access to icon list](#access-to-icon-list)
+  - [Access to list of icon types](#access-to-list-of-icon-types)
+- [Own styles](#own-styles)
+  - [Set icon color](#set-icon-color)
+  - [Set icon size by style](#set-icon-size-by-style)
 
 ## How to start
 
@@ -59,9 +61,9 @@ Vue.use(MaterialIcons);
 3. Now everything should work properly. :)
 
 
-## Getting Started
+## Usage
 
-### Usage
+### Base examples
 
 For Vue plugin setup:
 ```vue
@@ -123,13 +125,16 @@ ICONS_TYPES.sharp // returns `Material Icons Sharp`
 ICONS_TYPES['two-tone'] // returns `Material Icons Two Tone`
 ```
 
-### Set icon size by style
+## Own styles
+Icon component CSS class is `a-icon`. You can modify this class styles by new CSS styles.
 
-CSS example:
+### Set icon color
+
+Component with CSS example:
 ```vue
 <template>
   <div>
-    <a-icon :name="ICONS.delete" class="bigger-icon"/>
+    <a-icon :name="ICONS.delete" class="f-red"/>
   </div>
 </template>
 
@@ -140,7 +145,30 @@ export default {
 </script>
 
 <style>
-.bigger-icon {
+.a-icon.f-red {
+   color: red;
+}
+</style>
+```
+
+### Set icon size by style
+
+Component with CSS example:
+```vue
+<template>
+  <div>
+    <a-icon :name="ICONS.delete" class="f-bigger"/>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'some-page',
+};
+</script>
+
+<style>
+.a-icon.f-bigger {
    font-size: 64px;
    width: 64px;
    height: 64px;
@@ -157,6 +185,6 @@ SASS example:
    height: $size
 
 // icons.sass
-.bigger-icon 
+.a-icon.f-bigger 
   +icon-size(64px)
 ```
