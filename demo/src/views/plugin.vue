@@ -6,20 +6,24 @@
       <a-icon :name="ICONS.home" filled/>
     </div>
     <div>
+      <span class="label">Filled and colored</span>
+      <a-icon :name="ICONS.home" filled class="f-red"/>
+    </div>
+    <div>
       <span class="label">Outlined</span>
-      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.outlined"/>
+      <a-icon :name="ICONS.home" :type="ICONS_TYPES.outlined"/>
     </div>
     <div>
       <span class="label">Round</span>
-      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.round"/>
+      <a-icon :name="ICONS.home" :type="ICONS_TYPES.round"/>
     </div>
     <div>
       <span class="label">Sharp</span>
-      <a-icon :name="ICONS.delete" :type="ICONS_TYPES.sharp"/>
+      <a-icon :name="ICONS.home" :type="ICONS_TYPES.sharp"/>
     </div>
     <div>
       <span class="label">Two tone</span>
-      <a-icon :name="ICONS.delete" :type="ICONS_TYPES['two-tone']"/>
+      <a-icon :name="ICONS.home" :type="ICONS_TYPES['two-tone']"/>
     </div>
   </div>
 </template>

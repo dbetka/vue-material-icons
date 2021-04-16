@@ -42,9 +42,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.a-icon.f-red {
-  color: red;
-}
-</style>

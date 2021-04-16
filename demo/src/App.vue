@@ -52,4 +52,8 @@ body {
   vertical-align: super;
   padding: 4px 0;
 }
+
+.a-icon.f-red {
+  color: red;
+}
 </style>
