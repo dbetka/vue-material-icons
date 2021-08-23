@@ -37,7 +37,7 @@ module.exports = {
   output: {
     dir: 'dist',
     sourceMap: true,
-    extractCSS: false,
+    extractCSS: true,
   },
   bundleNodeModules: true,
 };

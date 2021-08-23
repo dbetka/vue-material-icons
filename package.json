@@ -2,7 +2,15 @@
   "name": "@dbetka/vue-material-icons",
   "version": "0.2.5",
   "description": "Vue Material Design Icons",
-  "keywords": ["material", "design", "icons", "vue", "dbetka", "@dbetka", "google"],
+  "keywords": [
+    "material",
+    "design",
+    "icons",
+    "vue",
+    "dbetka",
+    "@dbetka",
+    "google"
+  ],
   "license": "MIT",
   "main": "./dist/index.js",
   "scripts": {

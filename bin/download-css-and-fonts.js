@@ -13,14 +13,26 @@ const importSASSFileName = 'icons.sass';
 const importCSSFileName = 'local-icons.css';
 const fontsContent = [];
 
+function addFontDisplayToFile (src) {
+  const content = fs.readFileSync(src, 'utf-8');
+  const newContent = content.replace(/@font-face {\n/gm, '@font-face {\n  font-display: block;\n');
+  fs.writeFileSync(src, newContent, 'utf-8');
+  logs.norm('- add `font-display: block`', { indent: true });
+}
+
+function addFontDisplayToText (text) {
+  return text.replace(/@font-face {\n/gm, '@font-face {\n  font-display: block;\n');
+}
+
 function downloadCSSAndFontsRecursive (data, links, iter = 0) {
   const url = links[iter];
   const fileName = data.families[iter].replace(/\s/g, '-');
   const fileNameWithExtension = fileName + '.css';
   return download(url, CSSFontsDestination, { filename: fileNameWithExtension })
     .then(content => {
-      saveURLFromCSS(fileName, content);
+      saveURLFromCSS(fileName, addFontDisplayToText(String(content)));
       logs.done(fileNameWithExtension);
+      addFontDisplayToFile(CSSFontsDestination + fileNameWithExtension);
       iter++;
       if (links.length > iter) return downloadCSSAndFontsRecursive(data, links, iter);
       else return Promise.resolve();
@@ -56,7 +68,6 @@ function createSASSImportFile (families) {
 }
 
 function saveURLFromCSS (fileName, content) {
-  content = String(content);
   const findURL = content.match(/url\(\S*\)/g);
   const clearURL = String(findURL).replace('url(', '').replace(')', '');
   const extension = '.' + clearURL.split('.').pop();
