@@ -1,3 +1,4 @@
+const fs = require('fs');
 const {
   generateIconsDictionary,
   generateTypesDictionary,
@@ -7,8 +8,13 @@ const {
 const logs = require('../lib/logs');
 
 const iconListSource = 'https://fonts.google.com/metadata/icons';
-const iconListDestination = './src/__jscache__/icons-names.js';
-const iconTypesDestination = './src/__jscache__/icons-types.js';
+const jscache = './src/__jscache__/';
+const iconListDestination = jscache + 'icons-names.js';
+const iconTypesDestination = jscache + 'icons-types.js';
+
+if (!fs.existsSync(jscache)){
+  fs.mkdirSync(jscache);
+}
 
 function createFileWithIcons (data = { icons: [] }) {
   logs.normTitle('Saving icons names and types...');
