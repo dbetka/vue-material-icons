@@ -1,22 +1,24 @@
 import './style/index.sass'
 // import Menu from './components/Menu.vue'
 import { App } from 'vue'
+import { icons, Icons } from 'jscache/icons-names'
+import { iconsTypes, IconsTypes } from 'jscache/icons-types'
 
-export declare interface HelloPlugin {
-  sayHello(text: string): string;
+export declare interface MaterialIcons {
+  readonly names: Icons;
+  readonly types: IconsTypes;
   install(app: App): void;
 }
 
-const hello: HelloPlugin = {
-  sayHello (name) {
-    return `Hello ${name}`
-  },
+const materialIcons: MaterialIcons = {
+  names: icons,
+  types: iconsTypes,
   install (app) {
-    app.config.globalProperties.$hello = this
+    app.config.globalProperties.$icons = this
   },
 }
 
 export {
-  Menu,
-  hello,
+  // Menu,
+  materialIcons,
 }

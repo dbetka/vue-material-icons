@@ -1,8 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
-import { hello } from '../src/index'
+import '../dist/vue-material-icons.css'
+import { materialIcons } from '../'
 
 createApp(App)
-  .use(hello)
+  .use(materialIcons)
   .mount('#app')

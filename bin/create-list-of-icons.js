@@ -9,8 +9,8 @@ const logs = require('../lib/logs');
 
 const iconListSource = 'https://fonts.google.com/metadata/icons';
 const jscache = './src/__jscache__/';
-const iconListDestination = jscache + 'icons-names.js';
-const iconTypesDestination = jscache + 'icons-types.js';
+const iconListDestination = jscache + 'icons-names.ts';
+const iconTypesDestination = jscache + 'icons-types.ts';
 
 if (!fs.existsSync(jscache)){
   fs.mkdirSync(jscache);
