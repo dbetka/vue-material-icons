@@ -1,5 +1,5 @@
-import './style/index.scss'
-import Menu from './components/Menu.vue'
+import './style/index.sass'
+// import Menu from './components/Menu.vue'
 import { App } from 'vue'
 
 export declare interface HelloPlugin {

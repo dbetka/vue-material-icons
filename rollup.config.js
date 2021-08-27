@@ -4,7 +4,7 @@ import replace from '@rollup/plugin-replace'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import vue from 'rollup-plugin-vue'
-import scss from 'rollup-plugin-scss'
+import sass from 'rollup-plugin-sass'
 import chalk from 'chalk'
 import pkg from './package.json'
 
@@ -48,13 +48,13 @@ const packageConfigs = packageFormats.map(format =>
 )
 
 // only add the production ready if we are bundling the options
-packageFormats.forEach(format => {
-  if (format === 'cjs') {
-    packageConfigs.push(createProductionConfig(format))
-  } /*else if (format === 'global') {
-    packageConfigs.push(createMinifiedConfig(format))
-  }*/
-})
+// packageFormats.forEach(format => {
+//   // if (format === 'cjs') {
+//   //   packageConfigs.push(createProductionConfig(format))
+//   // } /*else if (format === 'global') {
+//   //   packageConfigs.push(createMinifiedConfig(format))
+//   // }*/
+// })
 
 export default packageConfigs
 
@@ -103,9 +103,10 @@ function createConfig(format, output, plugins = []) {
 
   // generate styles only for first build
   const scssOptions = {}
-  if (styleIsGenerated === false)
+  if (styleIsGenerated === false) {
     styleIsGenerated = true
-  else
+    scssOptions.output = true
+  } else
     scssOptions.output = false
 
   const external = [ 'vue' ]
@@ -121,9 +122,9 @@ function createConfig(format, output, plugins = []) {
     // used alone.
     external,
     plugins: [
-      scss({
+      sass({
         ...scssOptions,
-        outputStyle: 'compressed',
+        // outputStyle: 'compressed',
       }),
       vue(),
       tsPlugin,
@@ -186,12 +187,12 @@ function createReplacePlugin(
   })
 }
 
-function createProductionConfig(format) {
-  return createConfig(format, {
-    file: `dist/${pkg.name}.${format}.prod.js`,
-    format: outputConfigs[format].format,
-  })
-}
+// function createProductionConfig(format) {
+//   return createConfig(format, {
+//     file: `dist/${pkg.name}.${format}.prod.js`,
+//     format: outputConfigs[format].format,
+//   })
+// }
 
 // function createMinifiedConfig(format) {
 //   const { terser } = require('rollup-plugin-terser')

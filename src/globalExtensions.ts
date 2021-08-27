@@ -1,7 +1,7 @@
-import { HelloPlugin } from '@/index'
+import { MaterialIcons } from '@/index'
 
 declare module '@vue/runtime-core' {
   export interface ComponentCustomProperties {
-    $hello: HelloPlugin
+    $icons: MaterialIcons
   }
 }
