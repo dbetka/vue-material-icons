@@ -54,12 +54,13 @@
   ],
   "include": [
     "src/global.d.ts",
-    "src",
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
   ],
-  "files": ["src/index.ts"]
+  "files": [
+    "src/types/shims-vue.d.ts"
+  ]
 }

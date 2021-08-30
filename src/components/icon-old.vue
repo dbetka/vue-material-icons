@@ -11,10 +11,10 @@
 </template>
 
 <script lang="ts">
-import { uCheck } from '@dbetka/utils'
+import { defineComponent } from 'vue'
 
-export default {
-  name: 'AIcon',
+export default defineComponent({
+  name: 'AIconOld',
   inheritAttrs: false,
   props: {
     type: { type: String, default: '' },
@@ -29,24 +29,24 @@ export default {
   computed: {
     style () {
       let style = ''
-      if (uCheck.isDefined(this.size)) {
+      if (typeof this.size !== 'undefined') {
         style += `font-size: ${this.size}px;`
         style += `width: ${this.size}px;`
         style += `height: ${this.size}px;`
       }
       return style
     },
-    typeClassFromType () {
+    typeClassFromType (): string {
       switch (this.type) {
         case this.$icons.types.filled: return 'f-filled'
-        case this.ICONS_TYPES.outlined: return 'f-outlined'
-        case this.ICONS_TYPES.round: return 'f-round'
-        case this.ICONS_TYPES.sharp: return 'f-sharp'
-        case this.ICONS_TYPES['two-tone']: return 'f-two-tone'
+        case this.$icons.types.outlined: return 'f-outlined'
+        case this.$icons.types.round: return 'f-round'
+        case this.$icons.types.sharp: return 'f-sharp'
+        case this.$icons.types['two-tone']: return 'f-two-tone'
         default: return ''
       }
     },
-    typeClassFromParams () {
+    typeClassFromParams (): string {
       if (this.filled) return 'f-filled'
       if (this.outlined) return 'f-outlined'
       if (this.round) return 'f-round'
@@ -54,12 +54,12 @@ export default {
       if (this.twoTone) return 'f-two-tone'
       else return ''
     },
-    classes () {
+    classes (): Array<string> {
       return [
         this.typeClassFromType,
         this.typeClassFromParams,
       ]
     },
   },
-}
+})
 </script>

@@ -1,4 +1,2 @@
-declare module '*.vue' {
-  import Vue from 'vue'
-  export default Vue
-}
+// Global compile-time constants
+declare let __DEV__: boolean

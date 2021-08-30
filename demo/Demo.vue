@@ -1,18 +1,15 @@
 <template>
   <div class="home-main">
     <div class="hero">
-      <img
-        src="/social-media-logo-small.png"
-        alt="logo"
-      >
       <div style="margin-top: 30px">
         {{ $icons.names.add_box }}
+        <a-icon
+          :name="$icons.names.add_box"
+          :type="$icons.types.outlined"
+        />
       </div>
       <footer>
-        <a
-          href="https://www.prabhumurthy.com"
-          target="_new"
-        >&copy; {{ new Date().getFullYear() }} www.prabhumurthy.com</a>
+        <i>&copy; {{ new Date().getFullYear() }} dbetka</i>
       </footer>
     </div>
   </div>
@@ -23,6 +20,8 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'HelloWorld',
+  components: {
+  },
   setup() {
     const handleSelection = (name: string) => {
       console.log(name)
