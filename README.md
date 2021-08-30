@@ -1,15 +1,13 @@
 # vue-material-icons
-> Vue2 material design icons with easy access to icons names and types (all available in IDE hints).
+> Vue3 material design icons with easy access to icons names and types (all available in IDE hints).
 Hints were tested on IntelliJ IDE. Fonts based on https://fonts.google.com/icons.
 
 - [How to start](#how-to-start)
   - [Installation](#installation)
   - [Setup in project](#setup-in-project)
-  - [Own fonts for icons](#own-fonts-for-icons)
 - [Usage](#usage)
   - [Base examples](#base-examples)
-  - [Access to icon list](#access-to-icon-list)
-  - [Access to list of icon types](#access-to-list-of-icon-types)
+  - [Usage in Composition API](#usage-in-composition-api)
 - [Own styles](#own-styles)
   - [Set icon color](#set-icon-color)
   - [Set icon size by style](#set-icon-size-by-style)
@@ -18,111 +16,70 @@ Hints were tested on IntelliJ IDE. Fonts based on https://fonts.google.com/icons
 
 ### Installation
 ```bash
-npm install -D @dbetka/vue-material-icons
+npm install -D @dbetka/vue-material-icons // vue3 version
+npm install -D @dbetka/vue-material-icons@0.2.5 // vue2 version
 ```
+Go to @dbetka/vue-material-icons@0.2.5 [npm documentation](https://www.npmjs.com/package/@dbetka/vue-material-icons/v/0.2.5).
 
 ### Setup in project
 
-Add as Vue plugin:
+Add as Vue3 plugin:
 ```js
-import MaterialIcons from '@dbetka/vue-material-icons';
+import '@dbetka/vue-material-icons/dist/vue-material-icons.css'
+import { materialIcons } from '@dbetka/vue-material-icons';
 
-Vue.use(MaterialIcons);
+Vue.use(materialIcons);
 ```
-
-Add component by own:
-```js
-import { AIcon, IconComputed } from '@dbetka/vue-material-icons';
-
-Vue.use(IconComputed)
-Vue.component(AIcon.name, AIcon); // component name is `a-icon`
-```
-
-Set own component name:
-```js
-import { AIcon, IconComputed } from '@dbetka/vue-material-icons';
-
-Vue.use(IconComputed)
-Vue.component('my-component', AIcon); // component name is `my-component`
-```
-
-###  Own fonts for icons
-1. Copy `demo/public/html-api/fonts/material-icons/` into `html-api/fonts/material-icons/`
-   in your server public directory.
-
-2. Use `local` script from plugin instead of default. Example:
-
-```js
-import MaterialIcons from '@dbetka/vue-material-icons/local';
-
-Vue.use(MaterialIcons);
-```
-
-3. Now everything should work properly. :)
-
 
 ## Usage
 
 ### Base examples
-
-For Vue plugin setup:
 ```vue
 <template>
   <div>
-    <a-icon :name="ICONS.delete" outlined/>
-    <a-icon :name="ICONS.delete" :type="ICONS_TYPES.outlined"/>
+    <a-icon :name="$icons.names.delete" />
+    <a-icon :name="$icons.names.delete" filled/>
+    <a-icon :name="$icons.names.delete" outlined/>
+    <a-icon :name="$icons.names.delete" round/>
+    <a-icon :name="$icons.names.delete" sharp/>
+    <a-icon :name="$icons.names.delete" two-tone/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'some-page',
+  name: 'some-component',
 };
 </script>
 ```
 
-For once in component:
+### Usage in Composition API
 ```vue
 <template>
   <div>
-    <a-icon :name="ICONS.delete" outlined/>
-    <a-icon :name="ICONS.delete" :type="ICONS_TYPES.outlined"/>
+    <a-icon :name="elIcon" />
   </div>
 </template>
 
 <script>
-import { AIcon, ICONS, ICONS_TYPES } from '@dbetka/vue-material-icons';
+import { useIcons } from '@dbetka/vue-material-icons';
 
 export default {
-  name: 'some-page',
-  components: {
-    AIcon,
+  name: 'some-component',
+  props: {
+    done: Boolean,
   },
-  computed: {
-    ICONS: () => ICONS,
-    ICONS_TYPES: () => ICONS_TYPES,
-  },
+  setup(props) {
+    const icons = useIcons()
+    
+    const elIcon = computed(() => props.done ? icons.names.done : icons.names.hourglass_empty)
+    
+    return {
+      elIcon
+    }
+  }
 };
 </script>
-```
-
-### Access to icon list
-```js
-import { ICONS } from '@dbetka/vue-material-icons';
-
-ICONS.check // returns `check`
-ICONS.coronavirus // returns `coronavirus`
-```
-
-### Access to list of icon types
-```js
-import { ICONS_TYPES } from '@dbetka/vue-material-icons';
-
-ICONS_TYPES.filled // returns `Material Icons`
-ICONS_TYPES.outlined // returns `Material Icons Outlined`
-ICONS_TYPES.round // returns `Material Icons Round`
-ICONS_TYPES.sharp // returns `Material Icons Sharp`
-ICONS_TYPES['two-tone'] // returns `Material Icons Two Tone`
 ```
 
 ## Own styles
