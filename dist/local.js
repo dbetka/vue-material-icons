@@ -1,5 +1,5 @@
 /*!
- * @dbetka/vue-material-icons v0.2.6
+ * @dbetka/vue-material-icons v0.2.7
  * (c) dbetka
  * Released under the MIT License.
  */
@@ -134,6 +134,7 @@ var ICONS = {
   'add_to_photos': 'add_to_photos',
   'add_to_queue': 'add_to_queue',
   'addchart': 'addchart',
+  'adf_scanner': 'adf_scanner',
   'adjust': 'adjust',
   'admin_panel_settings': 'admin_panel_settings',
   'adobe': 'adobe',
@@ -361,6 +362,7 @@ var ICONS = {
   'cancel': 'cancel',
   'cancel_presentation': 'cancel_presentation',
   'cancel_schedule_send': 'cancel_schedule_send',
+  'candlestick_chart': 'candlestick_chart',
   'car_rental': 'car_rental',
   'car_repair': 'car_repair',
   'card_giftcard': 'card_giftcard',
@@ -521,6 +523,7 @@ var ICONS = {
   'devices_other': 'devices_other',
   'dialer_sip': 'dialer_sip',
   'dialpad': 'dialpad',
+  'diamond': 'diamond',
   'dining': 'dining',
   'dinner_dining': 'dinner_dining',
   'directions': 'directions',
@@ -669,6 +672,7 @@ var ICONS = {
   'fastfood': 'fastfood',
   'favorite': 'favorite',
   'favorite_border': 'favorite_border',
+  'fax': 'fax',
   'featured_play_list': 'featured_play_list',
   'featured_video': 'featured_video',
   'feed': 'feed',
@@ -928,6 +932,7 @@ var ICONS = {
   'iso': 'iso',
   'kayaking': 'kayaking',
   'kebab_dining': 'kebab_dining',
+  'key': 'key',
   'keyboard': 'keyboard',
   'keyboard_alt': 'keyboard_alt',
   'keyboard_arrow_down': 'keyboard_arrow_down',
@@ -1026,6 +1031,7 @@ var ICONS = {
   'lock_clock': 'lock_clock',
   'lock_open': 'lock_open',
   'login': 'login',
+  'logo_dev': 'logo_dev',
   'logout': 'logout',
   'looks': 'looks',
   'looks_3': 'looks_3',
@@ -1268,6 +1274,7 @@ var ICONS = {
   'pest_control': 'pest_control',
   'pest_control_rodent': 'pest_control_rodent',
   'pets': 'pets',
+  'phishing': 'phishing',
   'phone': 'phone',
   'phone_android': 'phone_android',
   'phone_bluetooth_speaker': 'phone_bluetooth_speaker',
@@ -1886,6 +1893,7 @@ var ICONS = {
   'wifi_off': 'wifi_off',
   'wifi_protected_setup': 'wifi_protected_setup',
   'wifi_tethering': 'wifi_tethering',
+  'wifi_tethering_error': 'wifi_tethering_error',
   'wifi_tethering_error_rounded': 'wifi_tethering_error_rounded',
   'wifi_tethering_off': 'wifi_tethering_off',
   'window': 'window',

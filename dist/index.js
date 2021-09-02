@@ -1,5 +1,5 @@
 /*!
- * @dbetka/vue-material-icons v0.2.6
+ * @dbetka/vue-material-icons v0.2.7
  * (c) dbetka
  * Released under the MIT License.
  */
@@ -34,7 +34,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".a-icon {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: \"liga\";\n}\n.a-icon.f-filled {\n  font-family: \"Material Icons\";\n}\n.a-icon.f-outlined {\n  font-family: \"Material Icons Outlined\";\n}\n.a-icon.f-round {\n  font-family: \"Material Icons Round\";\n}\n.a-icon.f-sharp {\n  font-family: \"Material Icons Sharp\";\n}\n.a-icon.f-two-tone {\n  font-family: \"Material Icons Two Tone\";\n}\n\n@font-face {\n  font-family: \"Material Icons\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialicons/v98/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format(\"truetype\");\n}\n.material-icons {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Outlined\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v75/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format(\"opentype\");\n}\n.material-icons-outlined {\n  font-family: \"Material Icons Outlined\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Round\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconsround/v74/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format(\"opentype\");\n}\n.material-icons-round {\n  font-family: \"Material Icons Round\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Sharp\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconssharp/v75/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format(\"opentype\");\n}\n.material-icons-sharp {\n  font-family: \"Material Icons Sharp\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Two Tone\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v73/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format(\"opentype\");\n}\n.material-icons-two-tone {\n  font-family: \"Material Icons Two Tone\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}";
+var css_248z = ".a-icon {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  width: 24px;\n  height: 24px;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: \"liga\";\n}\n.a-icon.f-filled {\n  font-family: \"Material Icons\";\n}\n.a-icon.f-outlined {\n  font-family: \"Material Icons Outlined\";\n}\n.a-icon.f-round {\n  font-family: \"Material Icons Round\";\n}\n.a-icon.f-sharp {\n  font-family: \"Material Icons Sharp\";\n}\n.a-icon.f-two-tone {\n  font-family: \"Material Icons Two Tone\";\n}\n\n@font-face {\n  font-family: \"Material Icons\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialicons/v99/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format(\"truetype\");\n}\n.material-icons {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Outlined\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v76/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format(\"opentype\");\n}\n.material-icons-outlined {\n  font-family: \"Material Icons Outlined\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Round\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconsround/v75/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format(\"opentype\");\n}\n.material-icons-round {\n  font-family: \"Material Icons Round\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Sharp\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconssharp/v76/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format(\"opentype\");\n}\n.material-icons-sharp {\n  font-family: \"Material Icons Sharp\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}\n\n@font-face {\n  font-family: \"Material Icons Two Tone\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v74/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format(\"opentype\");\n}\n.material-icons-two-tone {\n  font-family: \"Material Icons Two Tone\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n}";
 styleInject(css_248z);
 
 var ICONS = {
@@ -134,6 +134,7 @@ var ICONS = {
   'add_to_photos': 'add_to_photos',
   'add_to_queue': 'add_to_queue',
   'addchart': 'addchart',
+  'adf_scanner': 'adf_scanner',
   'adjust': 'adjust',
   'admin_panel_settings': 'admin_panel_settings',
   'adobe': 'adobe',
@@ -361,6 +362,7 @@ var ICONS = {
   'cancel': 'cancel',
   'cancel_presentation': 'cancel_presentation',
   'cancel_schedule_send': 'cancel_schedule_send',
+  'candlestick_chart': 'candlestick_chart',
   'car_rental': 'car_rental',
   'car_repair': 'car_repair',
   'card_giftcard': 'card_giftcard',
@@ -521,6 +523,7 @@ var ICONS = {
   'devices_other': 'devices_other',
   'dialer_sip': 'dialer_sip',
   'dialpad': 'dialpad',
+  'diamond': 'diamond',
   'dining': 'dining',
   'dinner_dining': 'dinner_dining',
   'directions': 'directions',
@@ -669,6 +672,7 @@ var ICONS = {
   'fastfood': 'fastfood',
   'favorite': 'favorite',
   'favorite_border': 'favorite_border',
+  'fax': 'fax',
   'featured_play_list': 'featured_play_list',
   'featured_video': 'featured_video',
   'feed': 'feed',
@@ -928,6 +932,7 @@ var ICONS = {
   'iso': 'iso',
   'kayaking': 'kayaking',
   'kebab_dining': 'kebab_dining',
+  'key': 'key',
   'keyboard': 'keyboard',
   'keyboard_alt': 'keyboard_alt',
   'keyboard_arrow_down': 'keyboard_arrow_down',
@@ -1026,6 +1031,7 @@ var ICONS = {
   'lock_clock': 'lock_clock',
   'lock_open': 'lock_open',
   'login': 'login',
+  'logo_dev': 'logo_dev',
   'logout': 'logout',
   'looks': 'looks',
   'looks_3': 'looks_3',
@@ -1268,6 +1274,7 @@ var ICONS = {
   'pest_control': 'pest_control',
   'pest_control_rodent': 'pest_control_rodent',
   'pets': 'pets',
+  'phishing': 'phishing',
   'phone': 'phone',
   'phone_android': 'phone_android',
   'phone_bluetooth_speaker': 'phone_bluetooth_speaker',
@@ -1886,6 +1893,7 @@ var ICONS = {
   'wifi_off': 'wifi_off',
   'wifi_protected_setup': 'wifi_protected_setup',
   'wifi_tethering': 'wifi_tethering',
+  'wifi_tethering_error': 'wifi_tethering_error',
   'wifi_tethering_error_rounded': 'wifi_tethering_error_rounded',
   'wifi_tethering_off': 'wifi_tethering_off',
   'window': 'window',
