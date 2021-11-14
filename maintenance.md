@@ -19,6 +19,7 @@ git clone https://github.com/dbetka/vue-material-icons.git
 ### Installation
 ```bash
 npm i
+sudo npm install -g @microsoft/api-extractor
 ```
 
 ### Scripts descriptions
