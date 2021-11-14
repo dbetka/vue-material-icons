@@ -64,14 +64,13 @@ const AIconImpl = defineComponent({
         typeClassFromParams.value,
       ]
     })
-
     return () => {
       return h(
         'i',
         {
           ...attrs,
-          style: elStyle.value,
-          class: elClass.value.join(' '),
+          style: elStyle.value + ' ' + attrs.style,
+          class: elClass.value.join(' ') + ' ' + attrs.class,
         },
         props.name
       )

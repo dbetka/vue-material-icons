@@ -6,6 +6,8 @@
         <a-icon
           :name="$icons.names.add_box"
           :type="$icons.types.outlined"
+          class="f-test"
+          size="26"
         />
       </div>
       <footer>
