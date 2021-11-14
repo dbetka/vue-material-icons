@@ -2,6 +2,7 @@ export declare type Icons = {
   '10k': string
   '10mp': string
   '11mp': string
+  '123': string
   '12mp': string
   '13mp': string
   '14mp': string
@@ -54,6 +55,7 @@ export declare type Icons = {
   '9k': string
   '9k_plus': string
   '9mp': string
+  'abc': string
   'ac_unit': string
   'access_alarm': string
   'access_alarms': string
@@ -76,6 +78,7 @@ export declare type Icons = {
   'add_alert': string
   'add_box': string
   'add_business': string
+  'add_card': string
   'add_chart': string
   'add_circle': string
   'add_circle_outline': string
@@ -95,9 +98,9 @@ export declare type Icons = {
   'add_to_photos': string
   'add_to_queue': string
   'addchart': string
+  'adf_scanner': string
   'adjust': string
   'admin_panel_settings': string
-  'adobe': string
   'ads_click': string
   'agriculture': string
   'air': string
@@ -143,7 +146,7 @@ export declare type Icons = {
   'app_blocking': string
   'app_registration': string
   'app_settings_alt': string
-  'apple': string
+  'app_shortcut': string
   'approval': string
   'apps': string
   'apps_outage': string
@@ -180,6 +183,7 @@ export declare type Icons = {
   'assistant': string
   'assistant_direction': string
   'assistant_photo': string
+  'assured_workload': string
   'atm': string
   'attach_email': string
   'attach_file': string
@@ -187,6 +191,7 @@ export declare type Icons = {
   'attachment': string
   'attractions': string
   'attribution': string
+  'audio_file': string
   'audiotrack': string
   'auto_awesome': string
   'auto_awesome_mosaic': string
@@ -208,6 +213,7 @@ export declare type Icons = {
   'backup_table': string
   'badge': string
   'bakery_dining': string
+  'balance': string
   'balcony': string
   'ballot': string
   'bar_chart': string
@@ -226,6 +232,7 @@ export declare type Icons = {
   'bedroom_child': string
   'bedroom_parent': string
   'bedtime': string
+  'bedtime_off': string
   'beenhere': string
   'bento': string
   'bike_scooter': string
@@ -264,6 +271,7 @@ export declare type Icons = {
   'border_style': string
   'border_top': string
   'border_vertical': string
+  'boy': string
   'branding_watermark': string
   'breakfast_dining': string
   'brightness_1': string
@@ -322,6 +330,7 @@ export declare type Icons = {
   'cancel': string
   'cancel_presentation': string
   'cancel_schedule_send': string
+  'candlestick_chart': string
   'car_rental': string
   'car_repair': string
   'card_giftcard': string
@@ -337,6 +346,7 @@ export declare type Icons = {
   'catching_pokemon': string
   'category': string
   'celebration': string
+  'cell_tower': string
   'cell_wifi': string
   'center_focus_strong': string
   'center_focus_weak': string
@@ -381,8 +391,10 @@ export declare type Icons = {
   'cloud_download': string
   'cloud_off': string
   'cloud_queue': string
+  'cloud_sync': string
   'cloud_upload': string
   'co2': string
+  'co_present': string
   'code': string
   'code_off': string
   'coffee': string
@@ -394,6 +406,7 @@ export declare type Icons = {
   'comment': string
   'comment_bank': string
   'comments_disabled': string
+  'commit': string
   'commute': string
   'compare': string
   'compare_arrows': string
@@ -418,6 +431,7 @@ export declare type Icons = {
   'content_paste_go': string
   'content_paste_off': string
   'content_paste_search': string
+  'contrast': string
   'control_camera': string
   'control_point': string
   'control_point_duplicate': string
@@ -447,6 +461,15 @@ export declare type Icons = {
   'crop_rotate': string
   'crop_square': string
   'cruelty_free': string
+  'css': string
+  'currency_exchange': string
+  'currency_franc': string
+  'currency_lira': string
+  'currency_pound': string
+  'currency_ruble': string
+  'currency_rupee': string
+  'currency_yen': string
+  'currency_yuan': string
   'dangerous': string
   'dark_mode': string
   'dashboard': string
@@ -456,8 +479,10 @@ export declare type Icons = {
   'data_object': string
   'data_saver_off': string
   'data_saver_on': string
+  'data_thresholding': string
   'data_usage': string
   'date_range': string
+  'deblur': string
   'deck': string
   'dehaze': string
   'delete': string
@@ -465,8 +490,12 @@ export declare type Icons = {
   'delete_outline': string
   'delete_sweep': string
   'delivery_dining': string
+  'density_large': string
+  'density_medium': string
+  'density_small': string
   'departure_board': string
   'description': string
+  'deselect': string
   'design_services': string
   'desktop_access_disabled': string
   'desktop_mac': string
@@ -482,6 +511,8 @@ export declare type Icons = {
   'devices_other': string
   'dialer_sip': string
   'dialpad': string
+  'diamond': string
+  'difference': string
   'dining': string
   'dinner_dining': string
   'directions': string
@@ -505,7 +536,7 @@ export declare type Icons = {
   'disabled_by_default': string
   'disabled_visible': string
   'disc_full': string
-  'discord': string
+  'display_settings': string
   'dns': string
   'do_disturb': string
   'do_disturb_alt': string
@@ -521,6 +552,7 @@ export declare type Icons = {
   'dock': string
   'document_scanner': string
   'domain': string
+  'domain_add': string
   'domain_disabled': string
   'domain_verification': string
   'done': string
@@ -572,6 +604,7 @@ export declare type Icons = {
   'egg_alt': string
   'eject': string
   'elderly': string
+  'elderly_woman': string
   'electric_bike': string
   'electric_car': string
   'electric_moped': string
@@ -603,6 +636,7 @@ export declare type Icons = {
   'event_available': string
   'event_busy': string
   'event_note': string
+  'event_repeat': string
   'event_seat': string
   'exit_to_app': string
   'expand': string
@@ -624,12 +658,14 @@ export declare type Icons = {
   'face_retouching_natural': string
   'face_retouching_off': string
   'fact_check': string
+  'factory': string
   'family_restroom': string
   'fast_forward': string
   'fast_rewind': string
   'fastfood': string
   'favorite': string
   'favorite_border': string
+  'fax': string
   'featured_play_list': string
   'featured_video': string
   'feed': string
@@ -646,6 +682,7 @@ export declare type Icons = {
   'file_download': string
   'file_download_done': string
   'file_download_off': string
+  'file_open': string
   'file_present': string
   'file_upload': string
   'filter': string
@@ -660,12 +697,14 @@ export declare type Icons = {
   'filter_9': string
   'filter_9_plus': string
   'filter_alt': string
+  'filter_alt_off': string
   'filter_b_and_w': string
   'filter_center_focus': string
   'filter_drama': string
   'filter_frames': string
   'filter_hdr': string
   'filter_list': string
+  'filter_list_off': string
   'filter_none': string
   'filter_tilt_shift': string
   'filter_vintage': string
@@ -679,6 +718,7 @@ export declare type Icons = {
   'fitbit': string
   'fitness_center': string
   'flag': string
+  'flag_circle': string
   'flaky': string
   'flare': string
   'flash_auto': string
@@ -701,14 +741,19 @@ export declare type Icons = {
   'fmd_bad': string
   'fmd_good': string
   'folder': string
+  'folder_delete': string
+  'folder_off': string
   'folder_open': string
   'folder_shared': string
   'folder_special': string
+  'folder_zip': string
   'follow_the_signs': string
   'font_download': string
   'font_download_off': string
   'food_bank': string
   'forest': string
+  'fork_left': string
+  'fork_right': string
   'format_align_center': string
   'format_align_justify': string
   'format_align_left': string
@@ -725,6 +770,7 @@ export declare type Icons = {
   'format_list_bulleted': string
   'format_list_numbered': string
   'format_list_numbered_rtl': string
+  'format_overline': string
   'format_paint': string
   'format_quote': string
   'format_shapes': string
@@ -758,6 +804,7 @@ export declare type Icons = {
   'get_app': string
   'gif': string
   'gif_box': string
+  'girl': string
   'gite': string
   'golf_course': string
   'gpp_bad': string
@@ -815,6 +862,7 @@ export declare type Icons = {
   'help_center': string
   'help_outline': string
   'hevc': string
+  'hexagon': string
   'hide_image': string
   'hide_source': string
   'high_quality': string
@@ -826,6 +874,8 @@ export declare type Icons = {
   'history_edu': string
   'history_toggle_off': string
   'hive': string
+  'hls': string
+  'hls_off': string
   'holiday_village': string
   'home': string
   'home_max': string
@@ -848,6 +898,7 @@ export declare type Icons = {
   'houseboat': string
   'how_to_reg': string
   'how_to_vote': string
+  'html': string
   'http': string
   'https': string
   'hub': string
@@ -877,6 +928,8 @@ export declare type Icons = {
   'insert_page_break': string
   'insert_photo': string
   'insights': string
+  'install_desktop': string
+  'install_mobile': string
   'integration_instructions': string
   'interests': string
   'interpreter_mode': string
@@ -887,8 +940,15 @@ export declare type Icons = {
   'ios_share': string
   'iron': string
   'iso': string
+  'javascript': string
+  'join_full': string
+  'join_inner': string
+  'join_left': string
+  'join_right': string
   'kayaking': string
   'kebab_dining': string
+  'key': string
+  'key_off': string
   'keyboard': string
   'keyboard_alt': string
   'keyboard_arrow_down': string
@@ -897,11 +957,14 @@ export declare type Icons = {
   'keyboard_arrow_up': string
   'keyboard_backspace': string
   'keyboard_capslock': string
+  'keyboard_command_key': string
+  'keyboard_control_key': string
   'keyboard_double_arrow_down': string
   'keyboard_double_arrow_left': string
   'keyboard_double_arrow_right': string
   'keyboard_double_arrow_up': string
   'keyboard_hide': string
+  'keyboard_option_key': string
   'keyboard_return': string
   'keyboard_tab': string
   'keyboard_voice': string
@@ -911,6 +974,7 @@ export declare type Icons = {
   'label': string
   'label_important': string
   'label_off': string
+  'lan': string
   'landscape': string
   'language': string
   'laptop': string
@@ -986,7 +1050,9 @@ export declare type Icons = {
   'lock': string
   'lock_clock': string
   'lock_open': string
+  'lock_reset': string
   'login': string
+  'logo_dev': string
   'logout': string
   'looks': string
   'looks_3': string
@@ -1018,6 +1084,7 @@ export declare type Icons = {
   'mark_chat_unread': string
   'mark_email_read': string
   'mark_email_unread': string
+  'mark_unread_chat_alt': string
   'markunread': string
   'markunread_mailbox': string
   'masks': string
@@ -1033,6 +1100,7 @@ export declare type Icons = {
   'menu': string
   'menu_book': string
   'menu_open': string
+  'merge': string
   'merge_type': string
   'message': string
   'mic': string
@@ -1080,7 +1148,9 @@ export declare type Icons = {
   'motion_photos_pause': string
   'motion_photos_paused': string
   'mouse': string
+  'move_down': string
   'move_to_inbox': string
+  'move_up': string
   'movie': string
   'movie_creation': string
   'movie_filter': string
@@ -1109,6 +1179,7 @@ export declare type Icons = {
   'network_wifi': string
   'new_label': string
   'new_releases': string
+  'newspaper': string
   'next_plan': string
   'next_week': string
   'nfc': string
@@ -1175,6 +1246,7 @@ export declare type Icons = {
   'paid': string
   'palette': string
   'pan_tool': string
+  'pan_tool_alt': string
   'panorama': string
   'panorama_fish_eye': string
   'panorama_horizontal': string
@@ -1197,13 +1269,14 @@ export declare type Icons = {
   'pause_presentation': string
   'payment': string
   'payments': string
-  'paypal': string
   'pedal_bike': string
   'pending': string
   'pending_actions': string
+  'pentagon': string
   'people': string
   'people_alt': string
   'people_outline': string
+  'percent': string
   'perm_camera_mic': string
   'perm_contact_calendar': string
   'perm_data_setting': string
@@ -1229,6 +1302,7 @@ export declare type Icons = {
   'pest_control': string
   'pest_control_rodent': string
   'pets': string
+  'phishing': string
   'phone': string
   'phone_android': string
   'phone_bluetooth_speaker': string
@@ -1257,6 +1331,7 @@ export declare type Icons = {
   'photo_size_select_actual': string
   'photo_size_select_large': string
   'photo_size_select_small': string
+  'php': string
   'piano': string
   'piano_off': string
   'picture_as_pdf': string
@@ -1268,6 +1343,7 @@ export declare type Icons = {
   'pin_drop': string
   'pin_end': string
   'pin_invoke': string
+  'pinch': string
   'pivot_table_chart': string
   'pix': string
   'place': string
@@ -1284,12 +1360,14 @@ export declare type Icons = {
   'playlist_add_check_circle': string
   'playlist_add_circle': string
   'playlist_play': string
+  'playlist_remove': string
   'plumbing': string
   'plus_one': string
   'podcasts': string
   'point_of_sale': string
   'policy': string
   'poll': string
+  'polyline': string
   'polymer': string
   'pool': string
   'portable_wifi_off': string
@@ -1324,12 +1402,12 @@ export declare type Icons = {
   'query_builder': string
   'query_stats': string
   'question_answer': string
+  'question_mark': string
   'queue': string
   'queue_music': string
   'queue_play_next': string
   'quickreply': string
   'quiz': string
-  'quora': string
   'r_mobiledata': string
   'radar': string
   'radio': string
@@ -1337,6 +1415,8 @@ export declare type Icons = {
   'radio_button_unchecked': string
   'railway_alert': string
   'ramen_dining': string
+  'ramp_left': string
+  'ramp_right': string
   'rate_review': string
   'raw_off': string
   'raw_on': string
@@ -1347,8 +1427,8 @@ export declare type Icons = {
   'recent_actors': string
   'recommend': string
   'record_voice_over': string
+  'rectangle': string
   'recycling': string
-  'reddit': string
   'redeem': string
   'redo': string
   'reduce_capacity': string
@@ -1390,6 +1470,8 @@ export declare type Icons = {
   'reviews': string
   'rice_bowl': string
   'ring_volume': string
+  'rocket': string
+  'rocket_launch': string
   'roofing': string
   'room': string
   'room_preferences': string
@@ -1398,6 +1480,8 @@ export declare type Icons = {
   'rotate_90_degrees_cw': string
   'rotate_left': string
   'rotate_right': string
+  'roundabout_left': string
+  'roundabout_right': string
   'rounded_corner': string
   'route': string
   'router': string
@@ -1414,10 +1498,13 @@ export declare type Icons = {
   'sailing': string
   'sanitizer': string
   'satellite': string
+  'satellite_alt': string
   'save': string
   'save_alt': string
+  'save_as': string
   'saved_search': string
   'savings': string
+  'scale': string
   'scanner': string
   'scatter_plot': string
   'schedule': string
@@ -1449,6 +1536,7 @@ export declare type Icons = {
   'sell': string
   'send': string
   'send_and_archive': string
+  'send_time_extension': string
   'send_to_mobile': string
   'sensor_door': string
   'sensor_window': string
@@ -1488,10 +1576,10 @@ export declare type Icons = {
   'shop': string
   'shop_2': string
   'shop_two': string
-  'shopify': string
   'shopping_bag': string
   'shopping_basket': string
   'shopping_cart': string
+  'shopping_cart_checkout': string
   'short_text': string
   'shortcut': string
   'show_chart': string
@@ -1518,6 +1606,7 @@ export declare type Icons = {
   'signal_wifi_statusbar_4_bar': string
   'signal_wifi_statusbar_connected_no_internet_4': string
   'signal_wifi_statusbar_null': string
+  'signpost': string
   'sim_card': string
   'sim_card_alert': string
   'sim_card_download': string
@@ -1538,7 +1627,6 @@ export declare type Icons = {
   'smoking_rooms': string
   'sms': string
   'sms_failed': string
-  'snapchat': string
   'snippet_folder': string
   'snooze': string
   'snowboarding': string
@@ -1577,6 +1665,7 @@ export declare type Icons = {
   'sports_handball': string
   'sports_hockey': string
   'sports_kabaddi': string
+  'sports_martial_arts': string
   'sports_mma': string
   'sports_motorsports': string
   'sports_rugby': string
@@ -1584,9 +1673,12 @@ export declare type Icons = {
   'sports_soccer': string
   'sports_tennis': string
   'sports_volleyball': string
+  'square': string
   'square_foot': string
+  'ssid_chart': string
   'stacked_bar_chart': string
   'stacked_line_chart': string
+  'stadium': string
   'stairs': string
   'star': string
   'star_border': string
@@ -1596,6 +1688,7 @@ export declare type Icons = {
   'star_purple500': string
   'star_rate': string
   'stars': string
+  'start': string
   'stay_current_landscape': string
   'stay_current_portrait': string
   'stay_primary_landscape': string
@@ -1609,6 +1702,7 @@ export declare type Icons = {
   'store_mall_directory': string
   'storefront': string
   'storm': string
+  'straight': string
   'straighten': string
   'stream': string
   'streetview': string
@@ -1637,6 +1731,15 @@ export declare type Icons = {
   'swap_vert': string
   'swap_vertical_circle': string
   'swipe': string
+  'swipe_down': string
+  'swipe_down_alt': string
+  'swipe_left': string
+  'swipe_left_alt': string
+  'swipe_right': string
+  'swipe_right_alt': string
+  'swipe_up': string
+  'swipe_up_alt': string
+  'swipe_vertical': string
   'switch_access_shortcut': string
   'switch_access_shortcut_add': string
   'switch_account': string
@@ -1648,6 +1751,7 @@ export declare type Icons = {
   'sync': string
   'sync_alt': string
   'sync_disabled': string
+  'sync_lock': string
   'sync_problem': string
   'system_security_update': string
   'system_security_update_good': string
@@ -1672,12 +1776,14 @@ export declare type Icons = {
   'task': string
   'task_alt': string
   'taxi_alert': string
-  'telegram': string
   'temple_buddhist': string
   'temple_hindu': string
+  'terminal': string
   'terrain': string
+  'text_decrease': string
   'text_fields': string
   'text_format': string
+  'text_increase': string
   'text_rotate_up': string
   'text_rotate_vertical': string
   'text_rotation_angledown': string
@@ -1698,7 +1804,6 @@ export declare type Icons = {
   'thumb_up_alt': string
   'thumb_up_off_alt': string
   'thumbs_up_down': string
-  'tiktok': string
   'time_to_leave': string
   'timelapse': string
   'timeline': string
@@ -1739,11 +1844,19 @@ export declare type Icons = {
   'tty': string
   'tune': string
   'tungsten': string
+  'turn_left': string
+  'turn_right': string
+  'turn_sharp_left': string
+  'turn_sharp_right': string
+  'turn_slight_left': string
+  'turn_slight_right': string
   'turned_in': string
   'turned_in_not': string
   'tv': string
   'tv_off': string
   'two_wheeler': string
+  'u_turn_left': string
+  'u_turn_right': string
   'umbrella': string
   'unarchive': string
   'undo': string
@@ -1771,6 +1884,7 @@ export declare type Icons = {
   'video_call': string
   'video_camera_back': string
   'video_camera_front': string
+  'video_file': string
   'video_label': string
   'video_library': string
   'video_settings': string
@@ -1784,15 +1898,20 @@ export declare type Icons = {
   'view_carousel': string
   'view_column': string
   'view_comfy': string
+  'view_comfy_alt': string
   'view_compact': string
+  'view_compact_alt': string
+  'view_cozy': string
   'view_day': string
   'view_headline': string
   'view_in_ar': string
+  'view_kanban': string
   'view_list': string
   'view_module': string
   'view_quilt': string
   'view_sidebar': string
   'view_stream': string
+  'view_timeline': string
   'view_week': string
   'vignette': string
   'villa': string
@@ -1807,14 +1926,17 @@ export declare type Icons = {
   'volume_up': string
   'volunteer_activism': string
   'vpn_key': string
+  'vpn_key_off': string
   'vpn_lock': string
   'vrpano': string
   'wallpaper': string
+  'warehouse': string
   'warning': string
   'warning_amber': string
   'wash': string
   'watch': string
   'watch_later': string
+  'watch_off': string
   'water': string
   'water_damage': string
   'water_drop': string
@@ -1832,7 +1954,7 @@ export declare type Icons = {
   'web': string
   'web_asset': string
   'web_asset_off': string
-  'wechat': string
+  'webhook': string
   'weekend': string
   'west': string
   'whatsapp': string
@@ -1843,17 +1965,18 @@ export declare type Icons = {
   'wifi': string
   'wifi_calling': string
   'wifi_calling_3': string
+  'wifi_channel': string
+  'wifi_find': string
   'wifi_lock': string
   'wifi_off': string
+  'wifi_password': string
   'wifi_protected_setup': string
   'wifi_tethering': string
-  'wifi_tethering_error_rounded': string
+  'wifi_tethering_error': string
   'wifi_tethering_off': string
   'window': string
   'wine_bar': string
   'woman': string
-  'woo_commerce': string
-  'wordpress': string
   'work': string
   'work_off': string
   'work_outline': string
@@ -1865,6 +1988,7 @@ export declare type Icons = {
   'yard': string
   'youtube_searched_for': string
   'zoom_in': string
+  'zoom_in_map': string
   'zoom_out': string
   'zoom_out_map': string
 };
@@ -1873,6 +1997,7 @@ export const icons: Icons = {
   '10k': '10k',
   '10mp': '10mp',
   '11mp': '11mp',
+  '123': '123',
   '12mp': '12mp',
   '13mp': '13mp',
   '14mp': '14mp',
@@ -1925,6 +2050,7 @@ export const icons: Icons = {
   '9k': '9k',
   '9k_plus': '9k_plus',
   '9mp': '9mp',
+  'abc': 'abc',
   'ac_unit': 'ac_unit',
   'access_alarm': 'access_alarm',
   'access_alarms': 'access_alarms',
@@ -1947,6 +2073,7 @@ export const icons: Icons = {
   'add_alert': 'add_alert',
   'add_box': 'add_box',
   'add_business': 'add_business',
+  'add_card': 'add_card',
   'add_chart': 'add_chart',
   'add_circle': 'add_circle',
   'add_circle_outline': 'add_circle_outline',
@@ -1966,9 +2093,9 @@ export const icons: Icons = {
   'add_to_photos': 'add_to_photos',
   'add_to_queue': 'add_to_queue',
   'addchart': 'addchart',
+  'adf_scanner': 'adf_scanner',
   'adjust': 'adjust',
   'admin_panel_settings': 'admin_panel_settings',
-  'adobe': 'adobe',
   'ads_click': 'ads_click',
   'agriculture': 'agriculture',
   'air': 'air',
@@ -2014,7 +2141,7 @@ export const icons: Icons = {
   'app_blocking': 'app_blocking',
   'app_registration': 'app_registration',
   'app_settings_alt': 'app_settings_alt',
-  'apple': 'apple',
+  'app_shortcut': 'app_shortcut',
   'approval': 'approval',
   'apps': 'apps',
   'apps_outage': 'apps_outage',
@@ -2051,6 +2178,7 @@ export const icons: Icons = {
   'assistant': 'assistant',
   'assistant_direction': 'assistant_direction',
   'assistant_photo': 'assistant_photo',
+  'assured_workload': 'assured_workload',
   'atm': 'atm',
   'attach_email': 'attach_email',
   'attach_file': 'attach_file',
@@ -2058,6 +2186,7 @@ export const icons: Icons = {
   'attachment': 'attachment',
   'attractions': 'attractions',
   'attribution': 'attribution',
+  'audio_file': 'audio_file',
   'audiotrack': 'audiotrack',
   'auto_awesome': 'auto_awesome',
   'auto_awesome_mosaic': 'auto_awesome_mosaic',
@@ -2079,6 +2208,7 @@ export const icons: Icons = {
   'backup_table': 'backup_table',
   'badge': 'badge',
   'bakery_dining': 'bakery_dining',
+  'balance': 'balance',
   'balcony': 'balcony',
   'ballot': 'ballot',
   'bar_chart': 'bar_chart',
@@ -2097,6 +2227,7 @@ export const icons: Icons = {
   'bedroom_child': 'bedroom_child',
   'bedroom_parent': 'bedroom_parent',
   'bedtime': 'bedtime',
+  'bedtime_off': 'bedtime_off',
   'beenhere': 'beenhere',
   'bento': 'bento',
   'bike_scooter': 'bike_scooter',
@@ -2135,6 +2266,7 @@ export const icons: Icons = {
   'border_style': 'border_style',
   'border_top': 'border_top',
   'border_vertical': 'border_vertical',
+  'boy': 'boy',
   'branding_watermark': 'branding_watermark',
   'breakfast_dining': 'breakfast_dining',
   'brightness_1': 'brightness_1',
@@ -2193,6 +2325,7 @@ export const icons: Icons = {
   'cancel': 'cancel',
   'cancel_presentation': 'cancel_presentation',
   'cancel_schedule_send': 'cancel_schedule_send',
+  'candlestick_chart': 'candlestick_chart',
   'car_rental': 'car_rental',
   'car_repair': 'car_repair',
   'card_giftcard': 'card_giftcard',
@@ -2208,6 +2341,7 @@ export const icons: Icons = {
   'catching_pokemon': 'catching_pokemon',
   'category': 'category',
   'celebration': 'celebration',
+  'cell_tower': 'cell_tower',
   'cell_wifi': 'cell_wifi',
   'center_focus_strong': 'center_focus_strong',
   'center_focus_weak': 'center_focus_weak',
@@ -2252,8 +2386,10 @@ export const icons: Icons = {
   'cloud_download': 'cloud_download',
   'cloud_off': 'cloud_off',
   'cloud_queue': 'cloud_queue',
+  'cloud_sync': 'cloud_sync',
   'cloud_upload': 'cloud_upload',
   'co2': 'co2',
+  'co_present': 'co_present',
   'code': 'code',
   'code_off': 'code_off',
   'coffee': 'coffee',
@@ -2265,6 +2401,7 @@ export const icons: Icons = {
   'comment': 'comment',
   'comment_bank': 'comment_bank',
   'comments_disabled': 'comments_disabled',
+  'commit': 'commit',
   'commute': 'commute',
   'compare': 'compare',
   'compare_arrows': 'compare_arrows',
@@ -2289,6 +2426,7 @@ export const icons: Icons = {
   'content_paste_go': 'content_paste_go',
   'content_paste_off': 'content_paste_off',
   'content_paste_search': 'content_paste_search',
+  'contrast': 'contrast',
   'control_camera': 'control_camera',
   'control_point': 'control_point',
   'control_point_duplicate': 'control_point_duplicate',
@@ -2318,6 +2456,15 @@ export const icons: Icons = {
   'crop_rotate': 'crop_rotate',
   'crop_square': 'crop_square',
   'cruelty_free': 'cruelty_free',
+  'css': 'css',
+  'currency_exchange': 'currency_exchange',
+  'currency_franc': 'currency_franc',
+  'currency_lira': 'currency_lira',
+  'currency_pound': 'currency_pound',
+  'currency_ruble': 'currency_ruble',
+  'currency_rupee': 'currency_rupee',
+  'currency_yen': 'currency_yen',
+  'currency_yuan': 'currency_yuan',
   'dangerous': 'dangerous',
   'dark_mode': 'dark_mode',
   'dashboard': 'dashboard',
@@ -2327,8 +2474,10 @@ export const icons: Icons = {
   'data_object': 'data_object',
   'data_saver_off': 'data_saver_off',
   'data_saver_on': 'data_saver_on',
+  'data_thresholding': 'data_thresholding',
   'data_usage': 'data_usage',
   'date_range': 'date_range',
+  'deblur': 'deblur',
   'deck': 'deck',
   'dehaze': 'dehaze',
   'delete': 'delete',
@@ -2336,8 +2485,12 @@ export const icons: Icons = {
   'delete_outline': 'delete_outline',
   'delete_sweep': 'delete_sweep',
   'delivery_dining': 'delivery_dining',
+  'density_large': 'density_large',
+  'density_medium': 'density_medium',
+  'density_small': 'density_small',
   'departure_board': 'departure_board',
   'description': 'description',
+  'deselect': 'deselect',
   'design_services': 'design_services',
   'desktop_access_disabled': 'desktop_access_disabled',
   'desktop_mac': 'desktop_mac',
@@ -2353,6 +2506,8 @@ export const icons: Icons = {
   'devices_other': 'devices_other',
   'dialer_sip': 'dialer_sip',
   'dialpad': 'dialpad',
+  'diamond': 'diamond',
+  'difference': 'difference',
   'dining': 'dining',
   'dinner_dining': 'dinner_dining',
   'directions': 'directions',
@@ -2376,7 +2531,7 @@ export const icons: Icons = {
   'disabled_by_default': 'disabled_by_default',
   'disabled_visible': 'disabled_visible',
   'disc_full': 'disc_full',
-  'discord': 'discord',
+  'display_settings': 'display_settings',
   'dns': 'dns',
   'do_disturb': 'do_disturb',
   'do_disturb_alt': 'do_disturb_alt',
@@ -2392,6 +2547,7 @@ export const icons: Icons = {
   'dock': 'dock',
   'document_scanner': 'document_scanner',
   'domain': 'domain',
+  'domain_add': 'domain_add',
   'domain_disabled': 'domain_disabled',
   'domain_verification': 'domain_verification',
   'done': 'done',
@@ -2443,6 +2599,7 @@ export const icons: Icons = {
   'egg_alt': 'egg_alt',
   'eject': 'eject',
   'elderly': 'elderly',
+  'elderly_woman': 'elderly_woman',
   'electric_bike': 'electric_bike',
   'electric_car': 'electric_car',
   'electric_moped': 'electric_moped',
@@ -2474,6 +2631,7 @@ export const icons: Icons = {
   'event_available': 'event_available',
   'event_busy': 'event_busy',
   'event_note': 'event_note',
+  'event_repeat': 'event_repeat',
   'event_seat': 'event_seat',
   'exit_to_app': 'exit_to_app',
   'expand': 'expand',
@@ -2495,12 +2653,14 @@ export const icons: Icons = {
   'face_retouching_natural': 'face_retouching_natural',
   'face_retouching_off': 'face_retouching_off',
   'fact_check': 'fact_check',
+  'factory': 'factory',
   'family_restroom': 'family_restroom',
   'fast_forward': 'fast_forward',
   'fast_rewind': 'fast_rewind',
   'fastfood': 'fastfood',
   'favorite': 'favorite',
   'favorite_border': 'favorite_border',
+  'fax': 'fax',
   'featured_play_list': 'featured_play_list',
   'featured_video': 'featured_video',
   'feed': 'feed',
@@ -2517,6 +2677,7 @@ export const icons: Icons = {
   'file_download': 'file_download',
   'file_download_done': 'file_download_done',
   'file_download_off': 'file_download_off',
+  'file_open': 'file_open',
   'file_present': 'file_present',
   'file_upload': 'file_upload',
   'filter': 'filter',
@@ -2531,12 +2692,14 @@ export const icons: Icons = {
   'filter_9': 'filter_9',
   'filter_9_plus': 'filter_9_plus',
   'filter_alt': 'filter_alt',
+  'filter_alt_off': 'filter_alt_off',
   'filter_b_and_w': 'filter_b_and_w',
   'filter_center_focus': 'filter_center_focus',
   'filter_drama': 'filter_drama',
   'filter_frames': 'filter_frames',
   'filter_hdr': 'filter_hdr',
   'filter_list': 'filter_list',
+  'filter_list_off': 'filter_list_off',
   'filter_none': 'filter_none',
   'filter_tilt_shift': 'filter_tilt_shift',
   'filter_vintage': 'filter_vintage',
@@ -2550,6 +2713,7 @@ export const icons: Icons = {
   'fitbit': 'fitbit',
   'fitness_center': 'fitness_center',
   'flag': 'flag',
+  'flag_circle': 'flag_circle',
   'flaky': 'flaky',
   'flare': 'flare',
   'flash_auto': 'flash_auto',
@@ -2572,14 +2736,19 @@ export const icons: Icons = {
   'fmd_bad': 'fmd_bad',
   'fmd_good': 'fmd_good',
   'folder': 'folder',
+  'folder_delete': 'folder_delete',
+  'folder_off': 'folder_off',
   'folder_open': 'folder_open',
   'folder_shared': 'folder_shared',
   'folder_special': 'folder_special',
+  'folder_zip': 'folder_zip',
   'follow_the_signs': 'follow_the_signs',
   'font_download': 'font_download',
   'font_download_off': 'font_download_off',
   'food_bank': 'food_bank',
   'forest': 'forest',
+  'fork_left': 'fork_left',
+  'fork_right': 'fork_right',
   'format_align_center': 'format_align_center',
   'format_align_justify': 'format_align_justify',
   'format_align_left': 'format_align_left',
@@ -2596,6 +2765,7 @@ export const icons: Icons = {
   'format_list_bulleted': 'format_list_bulleted',
   'format_list_numbered': 'format_list_numbered',
   'format_list_numbered_rtl': 'format_list_numbered_rtl',
+  'format_overline': 'format_overline',
   'format_paint': 'format_paint',
   'format_quote': 'format_quote',
   'format_shapes': 'format_shapes',
@@ -2629,6 +2799,7 @@ export const icons: Icons = {
   'get_app': 'get_app',
   'gif': 'gif',
   'gif_box': 'gif_box',
+  'girl': 'girl',
   'gite': 'gite',
   'golf_course': 'golf_course',
   'gpp_bad': 'gpp_bad',
@@ -2686,6 +2857,7 @@ export const icons: Icons = {
   'help_center': 'help_center',
   'help_outline': 'help_outline',
   'hevc': 'hevc',
+  'hexagon': 'hexagon',
   'hide_image': 'hide_image',
   'hide_source': 'hide_source',
   'high_quality': 'high_quality',
@@ -2697,6 +2869,8 @@ export const icons: Icons = {
   'history_edu': 'history_edu',
   'history_toggle_off': 'history_toggle_off',
   'hive': 'hive',
+  'hls': 'hls',
+  'hls_off': 'hls_off',
   'holiday_village': 'holiday_village',
   'home': 'home',
   'home_max': 'home_max',
@@ -2719,6 +2893,7 @@ export const icons: Icons = {
   'houseboat': 'houseboat',
   'how_to_reg': 'how_to_reg',
   'how_to_vote': 'how_to_vote',
+  'html': 'html',
   'http': 'http',
   'https': 'https',
   'hub': 'hub',
@@ -2748,6 +2923,8 @@ export const icons: Icons = {
   'insert_page_break': 'insert_page_break',
   'insert_photo': 'insert_photo',
   'insights': 'insights',
+  'install_desktop': 'install_desktop',
+  'install_mobile': 'install_mobile',
   'integration_instructions': 'integration_instructions',
   'interests': 'interests',
   'interpreter_mode': 'interpreter_mode',
@@ -2758,8 +2935,15 @@ export const icons: Icons = {
   'ios_share': 'ios_share',
   'iron': 'iron',
   'iso': 'iso',
+  'javascript': 'javascript',
+  'join_full': 'join_full',
+  'join_inner': 'join_inner',
+  'join_left': 'join_left',
+  'join_right': 'join_right',
   'kayaking': 'kayaking',
   'kebab_dining': 'kebab_dining',
+  'key': 'key',
+  'key_off': 'key_off',
   'keyboard': 'keyboard',
   'keyboard_alt': 'keyboard_alt',
   'keyboard_arrow_down': 'keyboard_arrow_down',
@@ -2768,11 +2952,14 @@ export const icons: Icons = {
   'keyboard_arrow_up': 'keyboard_arrow_up',
   'keyboard_backspace': 'keyboard_backspace',
   'keyboard_capslock': 'keyboard_capslock',
+  'keyboard_command_key': 'keyboard_command_key',
+  'keyboard_control_key': 'keyboard_control_key',
   'keyboard_double_arrow_down': 'keyboard_double_arrow_down',
   'keyboard_double_arrow_left': 'keyboard_double_arrow_left',
   'keyboard_double_arrow_right': 'keyboard_double_arrow_right',
   'keyboard_double_arrow_up': 'keyboard_double_arrow_up',
   'keyboard_hide': 'keyboard_hide',
+  'keyboard_option_key': 'keyboard_option_key',
   'keyboard_return': 'keyboard_return',
   'keyboard_tab': 'keyboard_tab',
   'keyboard_voice': 'keyboard_voice',
@@ -2782,6 +2969,7 @@ export const icons: Icons = {
   'label': 'label',
   'label_important': 'label_important',
   'label_off': 'label_off',
+  'lan': 'lan',
   'landscape': 'landscape',
   'language': 'language',
   'laptop': 'laptop',
@@ -2857,7 +3045,9 @@ export const icons: Icons = {
   'lock': 'lock',
   'lock_clock': 'lock_clock',
   'lock_open': 'lock_open',
+  'lock_reset': 'lock_reset',
   'login': 'login',
+  'logo_dev': 'logo_dev',
   'logout': 'logout',
   'looks': 'looks',
   'looks_3': 'looks_3',
@@ -2889,6 +3079,7 @@ export const icons: Icons = {
   'mark_chat_unread': 'mark_chat_unread',
   'mark_email_read': 'mark_email_read',
   'mark_email_unread': 'mark_email_unread',
+  'mark_unread_chat_alt': 'mark_unread_chat_alt',
   'markunread': 'markunread',
   'markunread_mailbox': 'markunread_mailbox',
   'masks': 'masks',
@@ -2904,6 +3095,7 @@ export const icons: Icons = {
   'menu': 'menu',
   'menu_book': 'menu_book',
   'menu_open': 'menu_open',
+  'merge': 'merge',
   'merge_type': 'merge_type',
   'message': 'message',
   'mic': 'mic',
@@ -2951,7 +3143,9 @@ export const icons: Icons = {
   'motion_photos_pause': 'motion_photos_pause',
   'motion_photos_paused': 'motion_photos_paused',
   'mouse': 'mouse',
+  'move_down': 'move_down',
   'move_to_inbox': 'move_to_inbox',
+  'move_up': 'move_up',
   'movie': 'movie',
   'movie_creation': 'movie_creation',
   'movie_filter': 'movie_filter',
@@ -2980,6 +3174,7 @@ export const icons: Icons = {
   'network_wifi': 'network_wifi',
   'new_label': 'new_label',
   'new_releases': 'new_releases',
+  'newspaper': 'newspaper',
   'next_plan': 'next_plan',
   'next_week': 'next_week',
   'nfc': 'nfc',
@@ -3046,6 +3241,7 @@ export const icons: Icons = {
   'paid': 'paid',
   'palette': 'palette',
   'pan_tool': 'pan_tool',
+  'pan_tool_alt': 'pan_tool_alt',
   'panorama': 'panorama',
   'panorama_fish_eye': 'panorama_fish_eye',
   'panorama_horizontal': 'panorama_horizontal',
@@ -3068,13 +3264,14 @@ export const icons: Icons = {
   'pause_presentation': 'pause_presentation',
   'payment': 'payment',
   'payments': 'payments',
-  'paypal': 'paypal',
   'pedal_bike': 'pedal_bike',
   'pending': 'pending',
   'pending_actions': 'pending_actions',
+  'pentagon': 'pentagon',
   'people': 'people',
   'people_alt': 'people_alt',
   'people_outline': 'people_outline',
+  'percent': 'percent',
   'perm_camera_mic': 'perm_camera_mic',
   'perm_contact_calendar': 'perm_contact_calendar',
   'perm_data_setting': 'perm_data_setting',
@@ -3100,6 +3297,7 @@ export const icons: Icons = {
   'pest_control': 'pest_control',
   'pest_control_rodent': 'pest_control_rodent',
   'pets': 'pets',
+  'phishing': 'phishing',
   'phone': 'phone',
   'phone_android': 'phone_android',
   'phone_bluetooth_speaker': 'phone_bluetooth_speaker',
@@ -3128,6 +3326,7 @@ export const icons: Icons = {
   'photo_size_select_actual': 'photo_size_select_actual',
   'photo_size_select_large': 'photo_size_select_large',
   'photo_size_select_small': 'photo_size_select_small',
+  'php': 'php',
   'piano': 'piano',
   'piano_off': 'piano_off',
   'picture_as_pdf': 'picture_as_pdf',
@@ -3139,6 +3338,7 @@ export const icons: Icons = {
   'pin_drop': 'pin_drop',
   'pin_end': 'pin_end',
   'pin_invoke': 'pin_invoke',
+  'pinch': 'pinch',
   'pivot_table_chart': 'pivot_table_chart',
   'pix': 'pix',
   'place': 'place',
@@ -3155,12 +3355,14 @@ export const icons: Icons = {
   'playlist_add_check_circle': 'playlist_add_check_circle',
   'playlist_add_circle': 'playlist_add_circle',
   'playlist_play': 'playlist_play',
+  'playlist_remove': 'playlist_remove',
   'plumbing': 'plumbing',
   'plus_one': 'plus_one',
   'podcasts': 'podcasts',
   'point_of_sale': 'point_of_sale',
   'policy': 'policy',
   'poll': 'poll',
+  'polyline': 'polyline',
   'polymer': 'polymer',
   'pool': 'pool',
   'portable_wifi_off': 'portable_wifi_off',
@@ -3195,12 +3397,12 @@ export const icons: Icons = {
   'query_builder': 'query_builder',
   'query_stats': 'query_stats',
   'question_answer': 'question_answer',
+  'question_mark': 'question_mark',
   'queue': 'queue',
   'queue_music': 'queue_music',
   'queue_play_next': 'queue_play_next',
   'quickreply': 'quickreply',
   'quiz': 'quiz',
-  'quora': 'quora',
   'r_mobiledata': 'r_mobiledata',
   'radar': 'radar',
   'radio': 'radio',
@@ -3208,6 +3410,8 @@ export const icons: Icons = {
   'radio_button_unchecked': 'radio_button_unchecked',
   'railway_alert': 'railway_alert',
   'ramen_dining': 'ramen_dining',
+  'ramp_left': 'ramp_left',
+  'ramp_right': 'ramp_right',
   'rate_review': 'rate_review',
   'raw_off': 'raw_off',
   'raw_on': 'raw_on',
@@ -3218,8 +3422,8 @@ export const icons: Icons = {
   'recent_actors': 'recent_actors',
   'recommend': 'recommend',
   'record_voice_over': 'record_voice_over',
+  'rectangle': 'rectangle',
   'recycling': 'recycling',
-  'reddit': 'reddit',
   'redeem': 'redeem',
   'redo': 'redo',
   'reduce_capacity': 'reduce_capacity',
@@ -3261,6 +3465,8 @@ export const icons: Icons = {
   'reviews': 'reviews',
   'rice_bowl': 'rice_bowl',
   'ring_volume': 'ring_volume',
+  'rocket': 'rocket',
+  'rocket_launch': 'rocket_launch',
   'roofing': 'roofing',
   'room': 'room',
   'room_preferences': 'room_preferences',
@@ -3269,6 +3475,8 @@ export const icons: Icons = {
   'rotate_90_degrees_cw': 'rotate_90_degrees_cw',
   'rotate_left': 'rotate_left',
   'rotate_right': 'rotate_right',
+  'roundabout_left': 'roundabout_left',
+  'roundabout_right': 'roundabout_right',
   'rounded_corner': 'rounded_corner',
   'route': 'route',
   'router': 'router',
@@ -3285,10 +3493,13 @@ export const icons: Icons = {
   'sailing': 'sailing',
   'sanitizer': 'sanitizer',
   'satellite': 'satellite',
+  'satellite_alt': 'satellite_alt',
   'save': 'save',
   'save_alt': 'save_alt',
+  'save_as': 'save_as',
   'saved_search': 'saved_search',
   'savings': 'savings',
+  'scale': 'scale',
   'scanner': 'scanner',
   'scatter_plot': 'scatter_plot',
   'schedule': 'schedule',
@@ -3320,6 +3531,7 @@ export const icons: Icons = {
   'sell': 'sell',
   'send': 'send',
   'send_and_archive': 'send_and_archive',
+  'send_time_extension': 'send_time_extension',
   'send_to_mobile': 'send_to_mobile',
   'sensor_door': 'sensor_door',
   'sensor_window': 'sensor_window',
@@ -3359,10 +3571,10 @@ export const icons: Icons = {
   'shop': 'shop',
   'shop_2': 'shop_2',
   'shop_two': 'shop_two',
-  'shopify': 'shopify',
   'shopping_bag': 'shopping_bag',
   'shopping_basket': 'shopping_basket',
   'shopping_cart': 'shopping_cart',
+  'shopping_cart_checkout': 'shopping_cart_checkout',
   'short_text': 'short_text',
   'shortcut': 'shortcut',
   'show_chart': 'show_chart',
@@ -3389,6 +3601,7 @@ export const icons: Icons = {
   'signal_wifi_statusbar_4_bar': 'signal_wifi_statusbar_4_bar',
   'signal_wifi_statusbar_connected_no_internet_4': 'signal_wifi_statusbar_connected_no_internet_4',
   'signal_wifi_statusbar_null': 'signal_wifi_statusbar_null',
+  'signpost': 'signpost',
   'sim_card': 'sim_card',
   'sim_card_alert': 'sim_card_alert',
   'sim_card_download': 'sim_card_download',
@@ -3409,7 +3622,6 @@ export const icons: Icons = {
   'smoking_rooms': 'smoking_rooms',
   'sms': 'sms',
   'sms_failed': 'sms_failed',
-  'snapchat': 'snapchat',
   'snippet_folder': 'snippet_folder',
   'snooze': 'snooze',
   'snowboarding': 'snowboarding',
@@ -3448,6 +3660,7 @@ export const icons: Icons = {
   'sports_handball': 'sports_handball',
   'sports_hockey': 'sports_hockey',
   'sports_kabaddi': 'sports_kabaddi',
+  'sports_martial_arts': 'sports_martial_arts',
   'sports_mma': 'sports_mma',
   'sports_motorsports': 'sports_motorsports',
   'sports_rugby': 'sports_rugby',
@@ -3455,9 +3668,12 @@ export const icons: Icons = {
   'sports_soccer': 'sports_soccer',
   'sports_tennis': 'sports_tennis',
   'sports_volleyball': 'sports_volleyball',
+  'square': 'square',
   'square_foot': 'square_foot',
+  'ssid_chart': 'ssid_chart',
   'stacked_bar_chart': 'stacked_bar_chart',
   'stacked_line_chart': 'stacked_line_chart',
+  'stadium': 'stadium',
   'stairs': 'stairs',
   'star': 'star',
   'star_border': 'star_border',
@@ -3467,6 +3683,7 @@ export const icons: Icons = {
   'star_purple500': 'star_purple500',
   'star_rate': 'star_rate',
   'stars': 'stars',
+  'start': 'start',
   'stay_current_landscape': 'stay_current_landscape',
   'stay_current_portrait': 'stay_current_portrait',
   'stay_primary_landscape': 'stay_primary_landscape',
@@ -3480,6 +3697,7 @@ export const icons: Icons = {
   'store_mall_directory': 'store_mall_directory',
   'storefront': 'storefront',
   'storm': 'storm',
+  'straight': 'straight',
   'straighten': 'straighten',
   'stream': 'stream',
   'streetview': 'streetview',
@@ -3508,6 +3726,15 @@ export const icons: Icons = {
   'swap_vert': 'swap_vert',
   'swap_vertical_circle': 'swap_vertical_circle',
   'swipe': 'swipe',
+  'swipe_down': 'swipe_down',
+  'swipe_down_alt': 'swipe_down_alt',
+  'swipe_left': 'swipe_left',
+  'swipe_left_alt': 'swipe_left_alt',
+  'swipe_right': 'swipe_right',
+  'swipe_right_alt': 'swipe_right_alt',
+  'swipe_up': 'swipe_up',
+  'swipe_up_alt': 'swipe_up_alt',
+  'swipe_vertical': 'swipe_vertical',
   'switch_access_shortcut': 'switch_access_shortcut',
   'switch_access_shortcut_add': 'switch_access_shortcut_add',
   'switch_account': 'switch_account',
@@ -3519,6 +3746,7 @@ export const icons: Icons = {
   'sync': 'sync',
   'sync_alt': 'sync_alt',
   'sync_disabled': 'sync_disabled',
+  'sync_lock': 'sync_lock',
   'sync_problem': 'sync_problem',
   'system_security_update': 'system_security_update',
   'system_security_update_good': 'system_security_update_good',
@@ -3543,12 +3771,14 @@ export const icons: Icons = {
   'task': 'task',
   'task_alt': 'task_alt',
   'taxi_alert': 'taxi_alert',
-  'telegram': 'telegram',
   'temple_buddhist': 'temple_buddhist',
   'temple_hindu': 'temple_hindu',
+  'terminal': 'terminal',
   'terrain': 'terrain',
+  'text_decrease': 'text_decrease',
   'text_fields': 'text_fields',
   'text_format': 'text_format',
+  'text_increase': 'text_increase',
   'text_rotate_up': 'text_rotate_up',
   'text_rotate_vertical': 'text_rotate_vertical',
   'text_rotation_angledown': 'text_rotation_angledown',
@@ -3569,7 +3799,6 @@ export const icons: Icons = {
   'thumb_up_alt': 'thumb_up_alt',
   'thumb_up_off_alt': 'thumb_up_off_alt',
   'thumbs_up_down': 'thumbs_up_down',
-  'tiktok': 'tiktok',
   'time_to_leave': 'time_to_leave',
   'timelapse': 'timelapse',
   'timeline': 'timeline',
@@ -3610,11 +3839,19 @@ export const icons: Icons = {
   'tty': 'tty',
   'tune': 'tune',
   'tungsten': 'tungsten',
+  'turn_left': 'turn_left',
+  'turn_right': 'turn_right',
+  'turn_sharp_left': 'turn_sharp_left',
+  'turn_sharp_right': 'turn_sharp_right',
+  'turn_slight_left': 'turn_slight_left',
+  'turn_slight_right': 'turn_slight_right',
   'turned_in': 'turned_in',
   'turned_in_not': 'turned_in_not',
   'tv': 'tv',
   'tv_off': 'tv_off',
   'two_wheeler': 'two_wheeler',
+  'u_turn_left': 'u_turn_left',
+  'u_turn_right': 'u_turn_right',
   'umbrella': 'umbrella',
   'unarchive': 'unarchive',
   'undo': 'undo',
@@ -3642,6 +3879,7 @@ export const icons: Icons = {
   'video_call': 'video_call',
   'video_camera_back': 'video_camera_back',
   'video_camera_front': 'video_camera_front',
+  'video_file': 'video_file',
   'video_label': 'video_label',
   'video_library': 'video_library',
   'video_settings': 'video_settings',
@@ -3655,15 +3893,20 @@ export const icons: Icons = {
   'view_carousel': 'view_carousel',
   'view_column': 'view_column',
   'view_comfy': 'view_comfy',
+  'view_comfy_alt': 'view_comfy_alt',
   'view_compact': 'view_compact',
+  'view_compact_alt': 'view_compact_alt',
+  'view_cozy': 'view_cozy',
   'view_day': 'view_day',
   'view_headline': 'view_headline',
   'view_in_ar': 'view_in_ar',
+  'view_kanban': 'view_kanban',
   'view_list': 'view_list',
   'view_module': 'view_module',
   'view_quilt': 'view_quilt',
   'view_sidebar': 'view_sidebar',
   'view_stream': 'view_stream',
+  'view_timeline': 'view_timeline',
   'view_week': 'view_week',
   'vignette': 'vignette',
   'villa': 'villa',
@@ -3678,14 +3921,17 @@ export const icons: Icons = {
   'volume_up': 'volume_up',
   'volunteer_activism': 'volunteer_activism',
   'vpn_key': 'vpn_key',
+  'vpn_key_off': 'vpn_key_off',
   'vpn_lock': 'vpn_lock',
   'vrpano': 'vrpano',
   'wallpaper': 'wallpaper',
+  'warehouse': 'warehouse',
   'warning': 'warning',
   'warning_amber': 'warning_amber',
   'wash': 'wash',
   'watch': 'watch',
   'watch_later': 'watch_later',
+  'watch_off': 'watch_off',
   'water': 'water',
   'water_damage': 'water_damage',
   'water_drop': 'water_drop',
@@ -3703,7 +3949,7 @@ export const icons: Icons = {
   'web': 'web',
   'web_asset': 'web_asset',
   'web_asset_off': 'web_asset_off',
-  'wechat': 'wechat',
+  'webhook': 'webhook',
   'weekend': 'weekend',
   'west': 'west',
   'whatsapp': 'whatsapp',
@@ -3714,17 +3960,18 @@ export const icons: Icons = {
   'wifi': 'wifi',
   'wifi_calling': 'wifi_calling',
   'wifi_calling_3': 'wifi_calling_3',
+  'wifi_channel': 'wifi_channel',
+  'wifi_find': 'wifi_find',
   'wifi_lock': 'wifi_lock',
   'wifi_off': 'wifi_off',
+  'wifi_password': 'wifi_password',
   'wifi_protected_setup': 'wifi_protected_setup',
   'wifi_tethering': 'wifi_tethering',
-  'wifi_tethering_error_rounded': 'wifi_tethering_error_rounded',
+  'wifi_tethering_error': 'wifi_tethering_error',
   'wifi_tethering_off': 'wifi_tethering_off',
   'window': 'window',
   'wine_bar': 'wine_bar',
   'woman': 'woman',
-  'woo_commerce': 'woo_commerce',
-  'wordpress': 'wordpress',
   'work': 'work',
   'work_off': 'work_off',
   'work_outline': 'work_outline',
@@ -3736,6 +3983,7 @@ export const icons: Icons = {
   'yard': 'yard',
   'youtube_searched_for': 'youtube_searched_for',
   'zoom_in': 'zoom_in',
+  'zoom_in_map': 'zoom_in_map',
   'zoom_out': 'zoom_out',
   'zoom_out_map': 'zoom_out_map',
 };
