@@ -1,9 +1,9 @@
 <template>
-  <div style="margin-top: 30px">
-    {{ $icons.names.add_box }}
+  <div style="margin-bottom: 30px">
+    {{ $icons.names.shopping_cart }}
     <a-icon
-      :name="$icons.names.add_box"
-      :type="$icons.types.outlined"
+      name="shopping_cart"
+      type="filled"
       class="f-test"
       size="26"
     />
@@ -12,10 +12,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { AIcon } from '../'
 
 export default defineComponent({
-  name: 'Demo',
+  name: 'DemoLocal',
   components: {
+    AIcon,
   },
   setup() {
     const handleSelection = (name: string) => {

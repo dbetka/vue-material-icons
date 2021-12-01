@@ -1,11 +1,11 @@
-import { AllowedComponentProps, ComponentCustomProps, computed, defineComponent, h, VNodeProps } from 'vue'
-import { IconsTypes } from 'jscache/icons-types'
-import { Icons } from 'jscache/icons-names'
+import { AllowedComponentProps, ComponentCustomProps, computed, defineComponent, h, PropType, VNodeProps } from 'vue'
+import { IconsTypesProp } from 'jscache/icons-types'
+import { IconsProp } from 'jscache/icons-names'
 import { useIcons } from '@/index'
 
 export interface AIconProps {
-  type: IconsTypes
-  name: Icons
+  type: IconsTypesProp
+  name: IconsProp
   size: string
   filled: boolean
   outlined: boolean
@@ -19,8 +19,8 @@ const AIconImpl = defineComponent({
   name: 'AIcon',
   inheritAttrs: false,
   props: {
-    type: { type: String, default: '' },
-    name: { type: String, required: true },
+    type: { type: String as PropType<IconsTypesProp>, default: '' },
+    name: { type: String as PropType<IconsProp>, required: true },
     size: { type: String, default: '' },
     filled: Boolean,
     outlined: Boolean,

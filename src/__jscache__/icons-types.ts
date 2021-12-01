@@ -12,4 +12,6 @@ export const iconsTypes: IconsTypes = {
   'round': 'Material Icons Round',
   'sharp': 'Material Icons Sharp',
   'two-tone': 'Material Icons Two Tone',
-};
+}
+
+export declare type IconsTypesProp = 'filled'|'outlined'|'round'|'sharp'|'two-tone'

@@ -21,6 +21,7 @@ module.exports = {
     'space-in-brackets': 'off',
     'object-curly-spacing': [ 'error', 'always' ],
     'array-bracket-spacing': [ 'error', 'always' ],
-    semi: [ 'error', 'never' ]
+    semi: [ 'error', 'never' ],
+    '@typescript-eslint/no-var-requires': 'off',
   },
 }
