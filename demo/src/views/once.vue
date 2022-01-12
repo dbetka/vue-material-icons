@@ -30,6 +30,7 @@
 
 <script>
 import { AIcon, ICONS, ICONS_TYPES } from 'material-icons';
+import 'material-icons-css';
 
 export default {
   name: 'page',

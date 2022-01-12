@@ -34,6 +34,8 @@ module.exports = {
       'demo': resolve('demo'),
       'material-icons': resolve('dist/index.js'),
       'material-icons-local': resolve('dist/local.js'),
+      'material-icons-css': resolve('dist/index.css'),
+      'material-icons-local-css': resolve('dist/local.css'),
       'router': resolve('demo/src/router'),
       'demo-src': resolve('demo/src'),
       'plugin-src': resolve('src'),

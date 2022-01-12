@@ -26,6 +26,7 @@ npm install -D @dbetka/vue-material-icons
 Add as Vue plugin:
 ```js
 import MaterialIcons from '@dbetka/vue-material-icons';
+import '@dbetka/vue-material-icons/dist/index.css';
 
 Vue.use(MaterialIcons);
 ```
@@ -33,6 +34,7 @@ Vue.use(MaterialIcons);
 Add component by own:
 ```js
 import { AIcon, IconComputed } from '@dbetka/vue-material-icons';
+import '@dbetka/vue-material-icons/dist/index.css';
 
 Vue.use(IconComputed)
 Vue.component(AIcon.name, AIcon); // component name is `a-icon`
@@ -41,6 +43,7 @@ Vue.component(AIcon.name, AIcon); // component name is `a-icon`
 Set own component name:
 ```js
 import { AIcon, IconComputed } from '@dbetka/vue-material-icons';
+import '@dbetka/vue-material-icons/dist/index.css';
 
 Vue.use(IconComputed)
 Vue.component('my-component', AIcon); // component name is `my-component`
@@ -54,6 +57,7 @@ Vue.component('my-component', AIcon); // component name is `my-component`
 
 ```js
 import MaterialIcons from '@dbetka/vue-material-icons/local';
+import '@dbetka/vue-material-icons/dist/local.css';
 
 Vue.use(MaterialIcons);
 ```

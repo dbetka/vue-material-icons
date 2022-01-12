@@ -18,8 +18,9 @@ function downloadCSSAndFontsRecursive (data, links, iter = 0) {
   const fileName = data.families[iter].replace(/\s/g, '-');
   const fileNameWithExtension = fileName + '.css';
   return download(url, CSSFontsDestination, { filename: fileNameWithExtension })
-    .then(content => {
-      saveURLFromCSS(fileName, content);
+    .then(content => addFontDisplayBlockToCSSFile(content, CSSFontsDestination + fileNameWithExtension))
+    .then(modifiedContent => {
+      saveURLFromCSS(fileName, modifiedContent);
       logs.done(fileNameWithExtension);
       iter++;
       if (links.length > iter) return downloadCSSAndFontsRecursive(data, links, iter);
@@ -65,6 +66,16 @@ function saveURLFromCSS (fileName, content) {
     fileName,
     file: fileName + extension,
     url: clearURL,
+  });
+}
+
+function addFontDisplayBlockToCSSFile (content, filePath) {
+  return new Promise((resolve, reject) => {
+    const newContent = String(content).replace(/@font-face {/g, '@font-face {\n  font-display: block;');
+    fs.writeFile(filePath, newContent, 'utf8', (err) => {
+      if (err) reject(err);
+      else resolve(newContent);
+    });
   });
 }
 

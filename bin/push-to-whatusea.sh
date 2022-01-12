@@ -2,20 +2,21 @@
 #dry_run=--dry-run
 dry_run=""
 
-vagrant_base=/home/vagrant/sites/dev.whatusea.com/app/webroot/html-api
+whatusea_base=~/Advanced-Tracking-SDK/Code/Full-stack/dev.whatusea.com/app/webroot/html-api
 local_dist=./
-vagrant_dist=${vagrant_base}/js/app/vendors/material-icons/
+whatusea_dist=${whatusea_base}/js/app/vendors/material-icons/
 
-local_fonts=./demo/public/html-api/fonts/material-icons/
-vagrant_fonts=${vagrant_base}/fonts/material-icons/
-
-rsync -ave "ssh -p 2222" $dry_run \
+rsync -av $dry_run \
 --exclude='node_modules' \
 --exclude='.git' \
 --exclude='.idea' \
+--exclude='temp' \
 --delete \
-$local_dist vagrant@localhost:$vagrant_dist
+$local_dist $whatusea_dist
 
-rsync -ave "ssh -p 2222" $dry_run \
+local_fonts=./demo/public/html-api/fonts/material-icons/
+whatusea_fonts=${whatusea_base}/fonts/material-icons/
+
+rsync -av $dry_run \
 --delete \
-$local_fonts vagrant@localhost:$vagrant_fonts
+$local_fonts $whatusea_fonts
