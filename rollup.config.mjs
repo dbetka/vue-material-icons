@@ -6,7 +6,11 @@ import commonjs from '@rollup/plugin-commonjs'
 import vue from 'rollup-plugin-vue'
 import sass from 'rollup-plugin-sass'
 import chalk from 'chalk'
-import pkg from './package.json'
+import pkg from './package.json' assert {type: 'json'}
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const banner = `/*!
   * ${pkg.name} v${pkg.version}
