@@ -91,7 +91,7 @@ Component with CSS example:
 ```vue
 <template>
   <div>
-    <a-icon :name="ICONS.delete" class="f-red"/>
+    <a-icon :name="$icons.names.delete" class="f-red"/>
   </div>
 </template>
 
@@ -114,7 +114,7 @@ Component with CSS example:
 ```vue
 <template>
   <div>
-    <a-icon :name="ICONS.delete" class="f-bigger"/>
+    <a-icon :name="$icons.names.delete" class="f-bigger"/>
   </div>
 </template>
 
