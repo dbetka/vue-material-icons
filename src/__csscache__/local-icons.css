@@ -93,6 +93,9 @@
   font-weight: 400;
   src: url("/html-api/fonts/material-icons/Material-Icons-Two-Tone.otf") format('opentype');
 }
+body {
+  --google-font-color-materialiconstwotone:none;
+}
 
 .material-icons-two-tone {
   font-family: 'Material Icons Two Tone';

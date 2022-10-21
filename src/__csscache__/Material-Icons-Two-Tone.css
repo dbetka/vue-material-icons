@@ -3,7 +3,10 @@
   font-family: 'Material Icons Two Tone';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v106/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format('opentype');
+  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v111/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format('opentype');
+}
+body {
+  --google-font-color-materialiconstwotone:none;
 }
 
 .material-icons-two-tone {
