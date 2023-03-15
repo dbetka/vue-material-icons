@@ -30,25 +30,24 @@ const styles = computed(() => {
 })
 const typeClassFromType = computed(() => {
   switch (props.type) {
-    case icons.types.filled: return 'f-filled'
-    case icons.types.outlined: return 'f-outlined'
-    case icons.types.round: return 'f-round'
-    case icons.types.sharp: return 'f-sharp'
-    case icons.types['two-tone']: return 'f-two-tone'
+    case icons.types.filled: return 'material-icon-filled'
+    case icons.types.outlined: return 'material-icon-outlined'
+    case icons.types.round: return 'material-icon-round'
+    case icons.types.sharp: return 'material-icon-sharp'
+    case icons.types['two-tone']: return 'material-icon-two-tone'
     default: return ''
   }
 })
 const typeClassFromParams = computed(() => {
-  if (props.filled) return 'f-filled'
-  if (props.outlined) return 'f-outlined'
-  if (props.round) return 'f-round'
-  if (props.sharp) return 'f-sharp'
-  if (props.twoTone) return 'f-two-tone'
+  if (props.filled) return 'material-icon-filled'
+  if (props.outlined) return 'material-icon-outlined'
+  if (props.round) return 'material-icon-round'
+  if (props.sharp) return 'material-icon-sharp'
+  if (props.twoTone) return 'material-icon-two-tone'
   else return ''
 })
 
 const classes = computed(() => ([
-  'a-icon',
   typeClassFromType.value,
   typeClassFromParams.value,
 ]))
@@ -56,6 +55,7 @@ const classes = computed(() => ([
 
 <template>
   <i
+    class="material-icon"
     :class="classes"
     :style="styles"
   >

@@ -16,7 +16,7 @@ Hints were tested on IntelliJ IDE. Fonts based on https://fonts.google.com/icons
 
 ### Installation
 ```bash
-npm install -D @dbetka/vue-material-icons@latest // vue3 version
+npm install -D @dbetka/vue-material-icons@latest
 ```
 
 ### Setup in project
@@ -24,7 +24,7 @@ npm install -D @dbetka/vue-material-icons@latest // vue3 version
 Add as Vue3 plugin:
 ```js
 import '@dbetka/vue-material-icons/dist/vue-material-icons.css'
-import { materialIcons } from '@dbetka/vue-material-icons';
+import materialIcons from '@dbetka/vue-material-icons';
 
 Vue.use(materialIcons);
 ```
@@ -35,12 +35,13 @@ Vue.use(materialIcons);
 ```vue
 <template>
   <div>
-    <a-icon :name="$icons.names.delete" />
-    <a-icon :name="$icons.names.delete" filled/>
-    <a-icon :name="$icons.names.delete" outlined/>
-    <a-icon :name="$icons.names.delete" round/>
-    <a-icon :name="$icons.names.delete" sharp/>
-    <a-icon :name="$icons.names.delete" two-tone/>
+    <material-icon name="delete" />
+    <material-icon name="delete" filled/>
+    <material-icon name="delete" outlined/>
+    <material-icon name="delete" round/>
+    <material-icon name="delete" sharp/>
+    <material-icon name="delete" two-tone/>
+    <material-icon name="delete" size="26"/>
   </div>
 </template>
 
@@ -55,7 +56,7 @@ export default {
 ```vue
 <template>
   <div>
-    <a-icon :name="elIcon" />
+    <material-icon :name="elIcon" />
   </div>
 </template>
 
@@ -81,7 +82,7 @@ export default {
 ```
 
 ## Own styles
-Icon component CSS class is `a-icon`. You can modify this class styles by new CSS styles.
+Icon component CSS class is `material-icon`. You can modify this class styles by new CSS styles.
 
 ### Set icon color
 
@@ -89,7 +90,7 @@ Component with CSS example:
 ```vue
 <template>
   <div>
-    <a-icon :name="$icons.names.delete" class="f-red"/>
+    <material-icon name="delete" class="red"/>
   </div>
 </template>
 
@@ -100,7 +101,7 @@ export default {
 </script>
 
 <style>
-.a-icon.f-red {
+.material-icon.red {
    color: red;
 }
 </style>
@@ -112,7 +113,7 @@ Component with CSS example:
 ```vue
 <template>
   <div>
-    <a-icon :name="$icons.names.delete" class="f-bigger"/>
+    <material-icon name="delete" class="bigger"/>
   </div>
 </template>
 
@@ -123,7 +124,7 @@ export default {
 </script>
 
 <style>
-.a-icon.f-bigger {
+.material-icon.bigger {
    font-size: 64px;
    width: 64px;
    height: 64px;
@@ -140,6 +141,6 @@ SASS example:
    height: $size
 
 // icons.sass
-.a-icon.f-bigger 
+.material-icon.bigger 
   +icon-size(64px)
 ```

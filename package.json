@@ -25,10 +25,7 @@
     "download-all": "npm run download-icons && npm run download-css-and-fonts",
     "dev": "vite",
     "download-and-build": "npm run download-all && npm run build",
-    "builda": "vite build",
-    "build": "npm run build:ts && npm run build:dts",
-    "build:ts": "rimraf ./dist && rollup -c rollup.config.mjs",
-    "build:dts": "api-extractor run --local --verbose && tail -n +2 src/globalExtensions.ts >> dist/vue-material-icons.d.ts",
+    "build": "vite build",
     "lint": "eslint src/**/*.vue"
   },
   "main": "dist/index.es.js",

@@ -1,17 +1,17 @@
 export declare type IconsTypes = {
-  'filled': 'filled'
-  'outlined': 'outlined'
-  'round': 'round'
-  'sharp': 'sharp'
-  'two-tone': 'two-tone'
-}
+  'filled': string
+  'outlined': string
+  'round': string
+  'sharp': string
+  'two-tone': string
+};
 
 export const iconsTypes: IconsTypes = {
-  'filled': 'filled',
-  'outlined': 'outlined',
-  'round': 'round',
-  'sharp': 'sharp',
-  'two-tone': 'two-tone',
+  'filled': 'Material Icons',
+  'outlined': 'Material Icons Outlined',
+  'round': 'Material Icons Round',
+  'sharp': 'Material Icons Sharp',
+  'two-tone': 'Material Icons Two Tone',
 }
 
 export declare type IconsTypesProp = 'filled'|'outlined'|'round'|'sharp'|'two-tone'

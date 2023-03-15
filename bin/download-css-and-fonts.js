@@ -6,7 +6,7 @@ const {
 const logs = require('../lib/logs')
 
 const iconsMetadataURL = 'https://fonts.google.com/metadata/icons'
-const CSSFontsDestination = 'src/__csscache__/'
+const CSSFontsDestination = 'src/csscache/'
 const fontsDestination = 'demo/public/html-api/fonts/material-icons/'
 const fontsPublicURL = '/html-api/fonts/material-icons/'
 const importSASSFileName = 'icons.sass'

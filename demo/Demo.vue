@@ -2,8 +2,8 @@
   <div style="margin-top: 30px">
     {{ $icons.names.add_box }}
     <material-icon
-      :name="$icons.names.add_box"
-      :type="$icons.types.outlined"
+      name="add_box"
+      type="outlined"
       class="f-test"
       size="26"
     />
