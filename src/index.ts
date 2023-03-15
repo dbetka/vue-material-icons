@@ -1,36 +1,37 @@
 import './style/index.sass'
-import { AIcon } from './components/icon'
-import { App, inject } from 'vue'
-import { icons, Icons } from 'jscache/icons-names'
-import { iconsTypes, IconsTypes } from 'jscache/icons-types'
-import { iconsKey } from '@/injectionSymbols'
-// export type { AIconProps } from './components/icon'
-// export type { Icons } from 'jscache/icons-names'
-// export type { IconsTypes } from 'jscache/icons-types'
+import MaterialIcon from './components/material-icon.vue'
+import { App } from 'vue'
+import { icons, Icons } from './jscache/icons-names'
+import { iconsTypes, IconsTypes } from './jscache/icons-types'
+export type { Icons } from './jscache/icons-names'
+export type { IconsTypes } from './jscache/icons-types'
 
 export declare interface MaterialIcons {
   readonly names: Icons;
   readonly types: IconsTypes;
-  install(app: App): void;
 }
 
 const materialIcons: MaterialIcons = {
-  names: icons,
-  types: iconsTypes,
-  install (app: App) {
-    app.config.globalProperties.$icons = this
-    app.component('AIcon', AIcon)
-    app.provide(iconsKey, this)
-  },
+  names: icons as Icons,
+  types: iconsTypes as IconsTypes,
 }
 
 function useIcons (): MaterialIcons {
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  return inject(iconsKey)!
+  return materialIcons as MaterialIcons
+}
+export default {
+  MaterialIcon,
+  useIcons,
+  materialIcons,
+  install: (app: App) => {
+    console.log('test')
+    app.config.globalProperties.$icons = materialIcons
+    app.component('MaterialIcon', MaterialIcon)
+  }
 }
 
 export {
-  AIcon,
+  MaterialIcon,
   useIcons,
   materialIcons,
 }

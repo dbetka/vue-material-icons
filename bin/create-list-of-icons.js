@@ -8,7 +8,7 @@ const {
 const logs = require('../lib/logs')
 
 const iconListSource = 'https://fonts.google.com/metadata/icons'
-const jscache = './src/__jscache__/'
+const jscache = './src/jscache/'
 const iconListDestination = jscache + 'icons-names.ts'
 const iconTypesDestination = jscache + 'icons-types.ts'
 

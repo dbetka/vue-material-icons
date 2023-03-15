@@ -1,13 +1,13 @@
 @font-face {
   font-display: block;
-  font-family: 'Material Icons Sharp';
+  font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconssharp/v108/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format('opentype');
+  src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format('truetype');
 }
 
-.material-icons-sharp {
-  font-family: 'Material Icons Sharp';
+.material-icons {
+  font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;

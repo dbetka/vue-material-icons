@@ -1,7 +1,7 @@
 <template>
   <div style="margin-bottom: 30px">
     {{ $icons.names.shopping_cart }}
-    <a-icon
+    <material-icon
       name="shopping_cart"
       type="filled"
       class="f-test"
@@ -12,12 +12,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { AIcon } from '../'
+import { MaterialIcon } from '../'
 
 export default defineComponent({
   name: 'DemoLocal',
   components: {
-    AIcon,
+    MaterialIcon,
   },
   setup() {
     const handleSelection = (name: string) => {
