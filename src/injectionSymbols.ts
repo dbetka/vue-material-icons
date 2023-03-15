@@ -7,8 +7,8 @@ export const hasSymbol =
 export const PolySymbol = (name: string): string | symbol =>
   // vr = vue router
   hasSymbol
-    ? Symbol(__DEV__ ? '[vue-material-icons]: ' + name : name)
-    : (__DEV__ ? '[vue-material-icons]: ' : '_vmi_') + name
+    ? Symbol(name)
+    : ('_vmi_') + name
 
 /**
  * Allows overriding the router instance returned by `useRouter` in tests. r
@@ -16,6 +16,4 @@ export const PolySymbol = (name: string): string | symbol =>
  *
  * @internal
  */
-export const iconsKey = /*#__PURE__*/ PolySymbol(
-  __DEV__ ? 'icons' : 'i'
-) as InjectionKey<MaterialIcons>
+export const iconsKey = /*#__PURE__*/ PolySymbol('i') as InjectionKey<MaterialIcons>

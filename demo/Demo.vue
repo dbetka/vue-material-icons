@@ -1,7 +1,7 @@
 <template>
   <div style="margin-top: 30px">
     {{ $icons.names.add_box }}
-    <a-icon
+    <material-icon
       :name="$icons.names.add_box"
       :type="$icons.types.outlined"
       class="f-test"

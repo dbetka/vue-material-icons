@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "noEmit": true,
-
     "allowJs": false,
 
     "strictNullChecks": true,
@@ -14,12 +12,12 @@
     "removeComments": false,
     "jsx": "preserve",
 
-    "target": "esnext",
+    "target": "es5",
     "module": "esnext",
     "strict": true,
     "declaration": true,
-    "declarationDir": "dist",
-    "outDir": "dist",
+    "declarationDir": "./dist",
+    "outDir": "./dist",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "importHelpers": true,
@@ -29,7 +27,7 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": false,
     "baseUrl": ".",
-    "rootDir": ".",
+    "rootDir": "./src",
     "types": [
       "node",
       "vue",
@@ -49,7 +47,6 @@
   },
   "exclude": [
     "node_modules",
-    "dist",
     "rollup.config.js"
   ],
   "include": [

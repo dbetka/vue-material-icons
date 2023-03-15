@@ -17,9 +17,7 @@ Hints were tested on IntelliJ IDE. Fonts based on https://fonts.google.com/icons
 ### Installation
 ```bash
 npm install -D @dbetka/vue-material-icons@latest // vue3 version
-npm install -D @dbetka/vue-material-icons@0.2.5 // vue2 version
 ```
-Go to @dbetka/vue-material-icons@0.2.5 [npm documentation](https://www.npmjs.com/package/@dbetka/vue-material-icons/v/0.2.5).
 
 ### Setup in project
 

@@ -56,7 +56,7 @@ function createSASSImportFile (families) {
   return new Promise((resolve, reject) => {
     const data = families
       .map(fileName => `@import "${CSSFontsDestination}${fileName.replace(/\s/g, '-')}"`)
-      .join('\n')
+      .join('\n') + '\n'
     fs.writeFile(CSSFontsDestination + importSASSFileName, data, err => {
       if (err) reject(err)
       else {
