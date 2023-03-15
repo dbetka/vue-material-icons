@@ -35,8 +35,6 @@
     ],
     "paths": {
       "@/*": ["src/*"],
-      "jscache/*": ["src/__jscache__/*"],
-      "csscache/*": ["src/__csscache__/*"]
     },
     "lib": [
       "esnext",

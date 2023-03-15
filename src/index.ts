@@ -1,10 +1,10 @@
 import './style/index.sass'
 import MaterialIcon from './components/material-icon.vue'
 import { App } from 'vue'
-import { icons, Icons } from 'jscache/icons-names'
-import { iconsTypes, IconsTypes } from 'jscache/icons-types'
-export type { Icons } from 'jscache/icons-names'
-export type { IconsTypes } from 'jscache/icons-types'
+import { icons, Icons } from './jscache/icons-names'
+import { iconsTypes, IconsTypes } from './jscache/icons-types'
+export type { Icons } from './jscache/icons-names'
+export type { IconsTypes } from './jscache/icons-types'
 
 export declare interface MaterialIcons {
   readonly names: Icons;

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { IconsTypesProp } from 'jscache/icons-types'
-import { IconsProp } from 'jscache/icons-names'
+import { IconsTypesProp } from '@/jscache/icons-types'
+import { IconsProp } from '@/jscache/icons-names'
 import { useIcons } from '@/index'
 
 const props = withDefaults(defineProps<{
