@@ -26,7 +26,8 @@ Add as Vue3 plugin:
 import '@dbetka/vue-material-icons/dist/vue-material-icons.css'
 import materialIcons from '@dbetka/vue-material-icons';
 
-Vue.use(materialIcons);
+const app = createApp(App);
+app.use(materialIcons);
 ```
 
 ## Usage
