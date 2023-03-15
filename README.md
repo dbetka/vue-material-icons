@@ -23,7 +23,7 @@ npm install -D @dbetka/vue-material-icons@latest
 
 Add as Vue3 plugin:
 ```js
-import '@dbetka/vue-material-icons/dist/vue-material-icons.css'
+import '@dbetka/vue-material-icons/dist/index.css'
 import materialIcons from '@dbetka/vue-material-icons';
 
 const app = createApp(App);
