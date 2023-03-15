@@ -24,7 +24,6 @@ export default {
   useIcons,
   materialIcons,
   install: (app: App) => {
-    console.log('test')
     app.config.globalProperties.$icons = materialIcons
     app.component('MaterialIcon', MaterialIcon)
   }
