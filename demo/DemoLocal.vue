@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { MaterialIcon } from '../'
+import { MaterialIcon, useIcons } from '../'
 
 export default defineComponent({
   name: 'DemoLocal',
@@ -23,6 +23,9 @@ export default defineComponent({
     const handleSelection = (name: string) => {
       console.log(name)
     }
+
+    const { metadata } = useIcons()
+    console.log(metadata)
 
     return {
       handleSelection,
