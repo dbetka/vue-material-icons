@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2024-08-26
+### Added
+- Add icons metadata to library API
+
 ## [1.0.4] - 2023-11.06
 ### Added
 - Create changelog file
