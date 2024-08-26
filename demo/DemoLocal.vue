@@ -25,7 +25,7 @@ export default defineComponent({
     }
 
     const { metadata } = useIcons()
-    console.log(metadata)
+    console.log('metadata', metadata)
 
     return {
       handleSelection,

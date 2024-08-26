@@ -19,7 +19,7 @@ Hints were tested on IntelliJ IDE. Fonts based on https://fonts.google.com/icons
 npm install -D @dbetka/vue-material-icons@latest
 ```
 
-### Setup in project
+### Setup in a project
 
 Add as Vue3 plugin:
 ```js
@@ -36,50 +36,37 @@ app.use(materialIcons);
 ```vue
 <template>
   <div>
-    <material-icon name="delete" />
-    <material-icon name="delete" filled/>
-    <material-icon name="delete" outlined/>
-    <material-icon name="delete" round/>
-    <material-icon name="delete" sharp/>
-    <material-icon name="delete" two-tone/>
-    <material-icon name="delete" size="26"/>
+    <MaterialIcon name="delete" />
+    <MaterialIcon name="delete" filled/>
+    <MaterialIcon name="delete" outlined/>
+    <MaterialIcon name="delete" round/>
+    <MaterialIcon name="delete" sharp/>
+    <MaterialIcon name="delete" two-tone/>
+    <MaterialIcon name="delete" size="26"/>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'some-component',
-};
-</script>
 ```
 
 ### Usage in Composition API
+
 ```vue
+<script setup lang="ts">
+  import { useIcons } from '@dbetka/vue-material-icons';
+  import { computed } from 'vue'
+
+  const props = defineProps<{
+    done: boolean
+  }>()
+
+  const icons = useIcons()
+  const currentIcon = computed(() => props.done ? icons.names.done : icons.names.hourglass_empty)
+</script>
+
 <template>
   <div>
-    <material-icon :name="elIcon" />
+    <MaterialIcon :name="currentIcon"/>
   </div>
 </template>
-
-<script>
-import { useIcons } from '@dbetka/vue-material-icons';
-
-export default {
-  name: 'some-component',
-  props: {
-    done: Boolean,
-  },
-  setup(props) {
-    const icons = useIcons()
-    
-    const elIcon = computed(() => props.done ? icons.names.done : icons.names.hourglass_empty)
-    
-    return {
-      elIcon
-    }
-  }
-};
-</script>
 ```
 
 ## Own styles
@@ -91,19 +78,13 @@ Component with CSS example:
 ```vue
 <template>
   <div>
-    <material-icon name="delete" class="red"/>
+    <MaterialIcon name="delete" class="red"/>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'some-page',
-};
-</script>
-
 <style>
 .material-icon.red {
-   color: red;
+  color: red;
 }
 </style>
 ```
@@ -114,34 +95,43 @@ Component with CSS example:
 ```vue
 <template>
   <div>
-    <material-icon name="delete" class="bigger"/>
+    <MaterialIcon name="delete" class="bigger"/>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'some-page',
-};
-</script>
-
 <style>
 .material-icon.bigger {
-   font-size: 64px;
-   width: 64px;
-   height: 64px;
+  font-size: 64px;
+  width: 64px;
+  height: 64px;
 }
 </style>
 ```
 
-SASS example:
-```sass
-// mixins.sass
-=icon-size($size)
-   font-size: $size
-   width: $size
-   height: $size
+## Symbols metadata
 
-// icons.sass
-.material-icon.bigger 
-  +icon-size(64px)
+Access to symbols metadata:
+```vue
+<script setup lang="ts">
+  import { useIcons } from '@dbetka/vue-material-symbols';
+  import { computed } from 'vue';
+  
+  /*** SymbolMetadata
+    name: string
+    version: number
+    popularity: number
+    codepoint: number
+    categories: string[]
+    tags: string[]
+   */
+  const { metadata } = useIcons()
+  
+  const symbolsSortedByPopularity = computed(() => metadata.sort((a, b) => b.popularity - a.popularity))
+</script>
+
+<template>
+  <div>
+    <MaterialIcon v-for="symbol of symbolsSortedByPopularity" :key="symbol.name" :name="symbol.name" />
+  </div>
+</template>
 ```

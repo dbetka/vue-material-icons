@@ -12,6 +12,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { useIcons } from '../'
 
 export default defineComponent({
   name: 'Demo',
@@ -21,6 +22,9 @@ export default defineComponent({
     const handleSelection = (name: string) => {
       console.log(name)
     }
+
+    const { metadata } = useIcons()
+    console.log('metadata', metadata)
 
     return {
       handleSelection,
